@@ -12,6 +12,7 @@
     ],
     "require": {
         "php": ">=7.4",
+        "drupal/admin_toolbar": "^3.1",
         "drupal/core": "^9.3",
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_login": "^1.0@RC",
