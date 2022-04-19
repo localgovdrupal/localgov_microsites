@@ -1,0 +1,33 @@
+{
+    "name": "localgovdrupal/localgov_microsites",
+    "description": "LocalGov Drupal Microsites distribution",
+    "type": "drupal-profile",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://github.com/localgovdrupal/localgov_microsites",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "drupal/core": "^9.3",
+        "drupal/gin": "^3.0@alpha",
+        "drupal/gin_login": "^1.0@RC",
+        "drupal/gin_toolbar": "^1.0@beta"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "enable-patching": true,
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {}
+    }
+}
