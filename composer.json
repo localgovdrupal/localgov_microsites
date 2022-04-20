@@ -8,6 +8,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/issue/domain_group-3276172.git"
         }
     ],
     "require": {
@@ -16,7 +20,8 @@
         "drupal/core": "^9.3",
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_login": "^1.0@RC",
-        "drupal/gin_toolbar": "^1.0@beta"
+        "drupal/gin_toolbar": "^1.0@beta",
+        "drupal/domain_group": "dev-entity-access"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
