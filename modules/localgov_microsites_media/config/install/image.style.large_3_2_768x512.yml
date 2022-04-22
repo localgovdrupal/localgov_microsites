@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.3_2
+  module:
+    - crop
+name: large_3_2_768x512
+label: 'Large 3:2 (768x512)'
+effects:
+  36c9f14a-8f5e-4794-92ea-bffab074f52e:
+    uuid: 36c9f14a-8f5e-4794-92ea-bffab074f52e
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      anchor: center-center
+      width: 768
+      height: 512
+  fc17e4a2-5b74-42f6-851f-5581cbd5089d:
+    uuid: fc17e4a2-5b74-42f6-851f-5581cbd5089d
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: '3_2'

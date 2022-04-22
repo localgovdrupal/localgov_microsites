@@ -1,0 +1,17 @@
+name: LocalGov Microsites Media
+description: LocalGov Media configuration required for Microsites profile.
+package: LocalGov Drupal
+type: module
+core_version_requirement: ^8.8 || ^9
+
+dependencies:
+  - drupal:editor
+  - drupal:file
+  - drupal:image
+  - drupal:media
+  - drupal:media_library
+  - drupal:path
+  - drupal:responsive_image
+  - crop:crop
+  - image_widget_crop:image_widget_crop
+  - linkit:linkit

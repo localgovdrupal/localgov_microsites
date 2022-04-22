@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: '3_2'
+label: '3:2'
+description: ''
+aspect_ratio: '3:2'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

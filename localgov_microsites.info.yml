@@ -4,9 +4,16 @@ description: 'Install LocalGov Drupal Microsites.'
 core_version_requirement: ^9
 
 install:
+  - localgov_microsites:localgov_microsites_media
   # Contrib
   - admin_toolbar:admin_toolbar
   - admin_toolbar:admin_toolbar_tools
+  - domain_group:domain_group
+  - localgov_core:localgov_media
+  - localgov_subsites:localgov_subsites
+  - localgov_microsites_group:localgov_microsites_group
+  - localgov_microsites_group:localgov_microsites_permissions
 
 themes:
+  - localgovdrupal_microsites_base
   - gin
