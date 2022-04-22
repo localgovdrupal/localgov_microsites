@@ -8,6 +8,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/issue/domain_group-3276172.git"
         }
     ],
     "require": {
