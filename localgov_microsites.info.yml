@@ -15,5 +15,5 @@ install:
   - localgov_microsites_group:localgov_microsites_permissions
 
 themes:
-  - localgovdrupal_microsites_base
+  - localgov_microsites_base
   - gin
