@@ -23,9 +23,10 @@
         "drupal/gin_toolbar": "^1.0@beta",
         "drupal/domain_group": "dev-entity-access",
         "localgovdrupal/localgov_core": "^2.1.0",
-	"localgovdrupal/localgov_subsites": "^2.0.0",
-	"localgovdrupal/localgov_microsites_group": "1.x-dev",
-	"localgovdrupal/localgov_microsites_base": "1.x-dev"
+        "localgovdrupal/localgov_subsites": "^2.0.0",
+        "localgovdrupal/localgov_microsites_group": "1.x-dev",
+        "localgovdrupal/localgov_microsites_base": "1.x-dev",
+        "localgovdrupal/localgov_page": "1.x-dev"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
