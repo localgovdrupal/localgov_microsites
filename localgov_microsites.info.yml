@@ -4,10 +4,43 @@ description: 'Install LocalGov Drupal Microsites.'
 core_version_requirement: ^9
 
 install:
+  # Core
+  - drupal:breakpoint
+  - drupal:block
+  - drupal:block_content
+  - drupal:ckeditor
+  - drupal:config
+  - drupal:contextual
+  - drupal:crop
+  - drupal:datetime
+  - drupal:dblog
+  - drupal:dynamic_page_cache
+  - drupal:editor
+  - drupal:field_ui
+  - drupal:file
+  - drupal:help
+  - drupal:history
+  - drupal:image
+  - drupal:node
+  - drupal:menu_link_content
+  - drupal:menu_ui
+  - drupal:options
+  - drupal:page_cache
+  - drupal:path
+  - drupal:quickedit
+  - drupal:taxonomy
+  - drupal:toolbar
+  - drupal:views
+  - drupal:views_ui
   # Contrib
   - admin_toolbar:admin_toolbar
   - admin_toolbar:admin_toolbar_tools
+  - domain:domain
+  - domain:domain_config
   - domain_group:domain_group
+  - group:group
+  - group_permissions:group_permissions
+  - twig_tweak:twig_tweak
   # LocalGov Drupal
   - localgov_core:localgov_media
   - localgov_microsites:localgov_microsites_media
