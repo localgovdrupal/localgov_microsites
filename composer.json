@@ -8,10 +8,6 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "vcs",
-            "url": "https://git.drupalcode.org/issue/domain_group-3276172.git"
         }
     ],
     "require": {
@@ -21,7 +17,7 @@
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_login": "^1.0@RC",
         "drupal/gin_toolbar": "^1.0@beta",
-        "drupal/domain_group": "dev-entity-access",
+        "drupal/domain_group": "3.x-dev",
         "localgovdrupal/localgov_core": "^2.1.0",
         "localgovdrupal/localgov_subsites": "^2.0.0",
         "localgovdrupal/localgov_microsites_group": "1.x-dev",
