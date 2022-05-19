@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.wysiwyg
+  module:
+    - filter
+    - fontawesome
+    - media
+    - system
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access fontawesome additional settings'
+  - 'use text format wysiwyg'
+  - 'view media'
+  - 'view the administration theme'
