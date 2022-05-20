@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.wysiwyg
+  module:
+    - filter
+    - fontawesome
+    - media
+    - system
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access media overview'
+  - 'administer media'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
+  - 'create remote_video media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own remote_video media'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any remote_video media'
+  - 'update any media'
+  - 'update media'
+  - 'use text format wysiwyg'
+  - 'view all media revisions'
+  - 'view media'
+  - 'view own unpublished media'
+  - 'view the administration theme'
