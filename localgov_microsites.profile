@@ -35,17 +35,18 @@ function localgov_microsites_form_install_configure_form_alter(&$form, FormState
 function localgov_microsites_form_install_configure_submit($form, FormStateInterface $form_state) {
 
   // Create default domain record.
-  $site_name = $form_state->getValue('site_name');
-  $hostname = $form_state->getValue('hostname');
-  $values = [
-    'name' => $site_name,
-    'hostname' => $hostname,
-    'scheme' => 'variable',
-    'status' => 1,
-    'weight' => -1,
-    'is_default' => 1,
-    'id' => \Drupal::entityTypeManager()->getStorage('domain')->createMachineName($hostname),
-  ];
-  $domain = \Drupal::entityTypeManager()->getStorage('domain')->create($values);
-  $domain->save();
+  if ($hostname = $form_state->getValue('hostname')) {
+    $site_name = $form_state->getValue('site_name');
+    $values = [
+      'name' => $site_name,
+      'hostname' => $hostname,
+      'scheme' => 'variable',
+      'status' => 1,
+      'weight' => -1,
+      'is_default' => 1,
+      'id' => \Drupal::entityTypeManager()->getStorage('domain')->createMachineName($hostname),
+    ];
+    $domain = \Drupal::entityTypeManager()->getStorage('domain')->create($values);
+    $domain->save();
+  }
 }
