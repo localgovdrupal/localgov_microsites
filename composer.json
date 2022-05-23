@@ -20,7 +20,7 @@
         "drupal/domain_group": "3.x-dev",
         "localgovdrupal/localgov_core": "^2.1.0",
         "localgovdrupal/localgov_subsites": "^2.0.0",
-        "localgovdrupal/localgov_microsites_group": "1.x-dev",
+        "localgovdrupal/localgov_microsites_group": "dev-feature/1.x/replicate-default-content-new-group",
         "localgovdrupal/localgov_microsites_base": "1.x-dev",
         "localgovdrupal/localgov_page": "1.x-dev"
     },
