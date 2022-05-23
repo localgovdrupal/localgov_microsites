@@ -20,10 +20,10 @@
         "drupal/gin_login": "^1.0@RC",
         "drupal/gin_toolbar": "^1.0@beta",
         "localgovdrupal/localgov_core": "^2.1.0",
-        "localgovdrupal/localgov_subsites": "^2.0.0",
+        "localgovdrupal/localgov_subsites": "dev-feature/2.x/57-layout-paragraphs",
         "localgovdrupal/localgov_microsites_group": "1.x-dev",
         "localgovdrupal/localgov_microsites_base": "1.x-dev",
-        "localgovdrupal/localgov_page": "1.x-dev"
+        "localgovdrupal/localgov_page": "dev-feature/84-layout-paragraphs-2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
