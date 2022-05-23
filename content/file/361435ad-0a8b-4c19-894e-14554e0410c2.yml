@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 361435ad-0a8b-4c19-894e-14554e0410c2
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: field-6574455__340.jpeg
+  uri:
+    -
+      value: 'public://2022-05/field-6574455__340.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 36432
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1653058795

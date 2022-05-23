@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 731ee019-1444-4170-870b-623a1cd3f691
+  bundle: remote_video
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: '11 HOURS Stunning 4K Underwater footage + Music | Nature Relaxation™ Rare & Colorful Sea Life Video'
+  created:
+    -
+      value: 1653306139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_media_oembed_video:
+    -
+      value: 'https://www.youtube.com/watch?v=G52dUQLxPzg'

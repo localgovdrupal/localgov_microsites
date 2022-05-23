@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0bbd808a-af3f-4b32-893d-ee7b345ed21c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 4245.jpg
+  uri:
+    -
+      value: 'public://2022-05/4245.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 80182
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1653304213
