@@ -311,9 +311,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 4
-          revision_translation_affected:
-            -
-              value: true
           localgov_heading_level:
             -
               value: h2
@@ -365,9 +362,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 4
-          revision_translation_affected:
-            -
-              value: true
           localgov_heading_level:
             -
               value: h2
@@ -443,9 +437,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 7
-          revision_translation_affected:
-            -
-              value: true
           localgov_heading_level:
             -
               value: h2
@@ -497,9 +488,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 7
-          revision_translation_affected:
-            -
-              value: true
           localgov_heading_level:
             -
               value: h2
@@ -570,9 +558,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 10
-          revision_translation_affected:
-            -
-              value: true
           localgov_text:
             -
               value: "<h2>Two column section&nbsp;(text and image)</h2>\r\n"
@@ -601,9 +586,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 10
-          revision_translation_affected:
-            -
-              value: true
           localgov_text:
             -
               value: "<p>Diam vulputate ut pharetra sit amet aliquam id diam maecenas. Arcu non odio euismod lacinia at quis. Placerat vestibulum lectus mauris ultrices eros in. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Facilisis magna etiam tempor orci eu lobortis elementum. Nisi vitae suscipit tellus mauris. Posuere lorem ipsum dolor sit. Eu facilisis sed odio morbi quis commodo odio. Nunc sed blandit libero volutpat. Ut etiam sit amet nisl purus in. Fusce ut placerat orci nulla pellentesque dignissim.</p>\r\n\r\n<p>A lacus vestibulum sed arcu non odio. Vel elit scelerisque mauris pellentesque pulvinar. Urna porttitor rhoncus dolor purus non. Elit ut aliquam purus sit amet. Penatibus et magnis dis parturient montes nascetur ridiculus. Tristique sollicitudin nibh sit amet commodo nulla facilisi. Diam maecenas ultricies mi eget. Neque egestas congue quisque egestas diam in.</p>\r\n\r\n<p>Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Rhoncus urna neque viverra justo nec ultrices dui. Adipiscing tristique risus nec feugiat. Turpis nunc eget lorem dolor. Netus et malesuada fames ac. Et sollicitudin ac orci phasellus egestas. Mus mauris vitae ultricies leo integer. Id diam vel quam elementum pulvinar etiam non quam lacus. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Libero volutpat sed cras ornare arcu dui. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Mattis rhoncus urna neque viverra. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Ornare suspendisse sed nisi lacus sed viverra tellus in. Dignissim sodales ut eu sem integer vitae.</p>\r\n"
@@ -632,9 +614,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 10
-          revision_translation_affected:
-            -
-              value: true
           localgov_caption:
             -
               value: "<p>Image caption</p>\r\n"
@@ -690,9 +669,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 14
-          revision_translation_affected:
-            -
-              value: true
           localgov_text:
             -
               value: "<h2>Two column section with&nbsp;Featured teasers</h2>\r\n"
@@ -721,9 +697,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 14
-          revision_translation_affected:
-            -
-              value: true
           localgov_heading_level:
             -
               value: h2
@@ -824,9 +797,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 14
-          revision_translation_affected:
-            -
-              value: true
           localgov_heading_level:
             -
               value: h2
@@ -912,7 +882,7 @@ default:
                   parent_uuid: 34c960de-a7a7-4546-8fc0-d2bc0a6c9ce3
                   layout: ''
                   config: {  }
-                  parent_delta: 27
+                  parent_delta: 18
           revision_translation_affected:
             -
               value: true
@@ -943,26 +913,26 @@ default:
                   parent_uuid: 34c960de-a7a7-4546-8fc0-d2bc0a6c9ce3
                   layout: ''
                   config: {  }
-                  parent_delta: 27
+                  parent_delta: 18
           revision_translation_affected:
             -
               value: true
           localgov_ia_block_link:
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: ''
               options: {  }
           localgov_ia_block_links:
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: 'Link 1'
               options: {  }
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: 'Link 2'
               options: {  }
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: 'Link 3'
               options: {  }
           localgov_ia_block_promoted:
@@ -994,26 +964,26 @@ default:
                   parent_uuid: 34c960de-a7a7-4546-8fc0-d2bc0a6c9ce3
                   layout: ''
                   config: {  }
-                  parent_delta: 27
+                  parent_delta: 18
           revision_translation_affected:
             -
               value: true
           localgov_ia_block_link:
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: ''
               options: {  }
           localgov_ia_block_links:
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: 'Menu item'
               options: {  }
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: 'Menu item'
               options: {  }
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: 'Menu item'
               options: {  }
           localgov_ia_block_promoted:
@@ -1045,26 +1015,26 @@ default:
                   parent_uuid: 34c960de-a7a7-4546-8fc0-d2bc0a6c9ce3
                   layout: ''
                   config: {  }
-                  parent_delta: 27
+                  parent_delta: 18
           revision_translation_affected:
             -
               value: true
           localgov_ia_block_link:
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: ''
               options: {  }
           localgov_ia_block_links:
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: 'item uno'
               options: {  }
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: 'item due'
               options: {  }
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: 'item tre'
               options: {  }
           localgov_ia_block_promoted:
@@ -1120,7 +1090,7 @@ default:
                   parent_uuid: 1c1a23a0-9025-428c-af85-869e047e387b
                   layout: ''
                   config: {  }
-                  parent_delta: 18
+                  parent_delta: 23
           revision_translation_affected:
             -
               value: true
@@ -1151,7 +1121,7 @@ default:
                   parent_uuid: 1c1a23a0-9025-428c-af85-869e047e387b
                   layout: ''
                   config: {  }
-                  parent_delta: 18
+                  parent_delta: 23
           revision_translation_affected:
             -
               value: true
@@ -1182,7 +1152,7 @@ default:
                   parent_uuid: 1c1a23a0-9025-428c-af85-869e047e387b
                   layout: ''
                   config: {  }
-                  parent_delta: 18
+                  parent_delta: 23
           revision_translation_affected:
             -
               value: true
@@ -1216,7 +1186,7 @@ default:
                   parent_uuid: 1c1a23a0-9025-428c-af85-869e047e387b
                   layout: ''
                   config: {  }
-                  parent_delta: 18
+                  parent_delta: 23
           revision_translation_affected:
             -
               value: true
@@ -1247,7 +1217,7 @@ default:
                   parent_uuid: 1c1a23a0-9025-428c-af85-869e047e387b
                   layout: ''
                   config: {  }
-                  parent_delta: 18
+                  parent_delta: 23
           revision_translation_affected:
             -
               value: true
@@ -1278,7 +1248,7 @@ default:
                   parent_uuid: 1c1a23a0-9025-428c-af85-869e047e387b
                   layout: ''
                   config: {  }
-                  parent_delta: 18
+                  parent_delta: 23
           revision_translation_affected:
             -
               value: true
@@ -1311,7 +1281,7 @@ default:
                   parent_uuid: 1c1a23a0-9025-428c-af85-869e047e387b
                   layout: ''
                   config: {  }
-                  parent_delta: 18
+                  parent_delta: 23
           revision_translation_affected:
             -
               value: true
@@ -1344,7 +1314,7 @@ default:
                   parent_uuid: 1c1a23a0-9025-428c-af85-869e047e387b
                   layout: ''
                   config: {  }
-                  parent_delta: 18
+                  parent_delta: 23
           revision_translation_affected:
             -
               value: true
@@ -1357,7 +1327,7 @@ default:
               format: wysiwyg
           localgov_button:
             -
-              target_uuid: 970e1105-b224-46bf-8783-9d2669f5a8f6
+              uri: 'internal:/node/1'
               title: 'Link to call out box'
               options: {  }
           localgov_colour_theme:
@@ -1420,9 +1390,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 32
-          revision_translation_affected:
-            -
-              value: true
           localgov_text:
             -
               value: "<h2>Table</h2>\r\n"
@@ -1451,9 +1418,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 32
-          revision_translation_affected:
-            -
-              value: true
           localgov_table:
             -
               value:
@@ -1512,9 +1476,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 32
-          revision_translation_affected:
-            -
-              value: true
           localgov_video:
             -
               entity: 731ee019-1444-4170-870b-623a1cd3f691
