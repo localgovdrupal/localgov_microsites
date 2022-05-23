@@ -44,6 +44,7 @@ install:
   # LocalGov Drupal
   - localgov_core:localgov_media
   - localgov_microsites:localgov_microsites_media
+  - localgov_microsites_colour_picker_fields:localgov_microsites_colour_picker_fields
   - localgov_microsites_group:localgov_microsites_group
   - localgov_microsites_group:localgov_microsites_permissions
   - localgov_page:localgov_page

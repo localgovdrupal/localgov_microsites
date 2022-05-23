@@ -22,6 +22,7 @@
         "localgovdrupal/localgov_subsites": "^2.0.0",
         "localgovdrupal/localgov_microsites_group": "1.x-dev",
         "localgovdrupal/localgov_microsites_base": "1.x-dev",
+        "localgovdrupal/localgov_microsites_colour_picker_fields": "1.x-dev",
         "localgovdrupal/localgov_page": "1.x-dev"
     },
     "minimum-stability": "dev",
