@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: aa8b4b9c-f74d-4e30-bf51-afbc005a2470
+  bundle: image
+  default_langcode: en
+  depends:
+    2516cc22-0fcd-4466-8ac3-b3a1cf264bb3: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: Sommerlandschaft-Bilder-1.jpeg
+  created:
+    -
+      value: 1653059233
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_media_image:
+    -
+      entity: 2516cc22-0fcd-4466-8ac3-b3a1cf264bb3
+      alt: Sommerlandschaft
+      title: ''
+      width: 1200
+      height: 800

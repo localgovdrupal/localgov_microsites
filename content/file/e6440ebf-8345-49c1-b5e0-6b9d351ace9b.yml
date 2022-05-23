@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e6440ebf-8345-49c1-b5e0-6b9d351ace9b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: cliff-moher-ireland.jpg
+  uri:
+    -
+      value: 'public://2022-05/cliff-moher-ireland.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 779418
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1653305506

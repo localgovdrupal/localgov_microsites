@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a889aa79-060a-4f4d-876b-55da226e4bd2
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'autumn-morning-1817141_1280 (1).jpg'
+  uri:
+    -
+      value: 'public://2022-05/autumn-morning-1817141_1280 (1).jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 74078
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1653304986

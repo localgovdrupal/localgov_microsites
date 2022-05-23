@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7599711d-341b-41ff-ae1e-89654f70cbd1
+  bundle: image
+  default_langcode: en
+  depends:
+    a889aa79-060a-4f4d-876b-55da226e4bd2: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'autumn-morning-1817141_1280 (1).jpg'
+  created:
+    -
+      value: 1653304986
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_media_image:
+    -
+      entity: a889aa79-060a-4f4d-876b-55da226e4bd2
+      alt: 'alt text'
+      title: ''
+      width: 1280
+      height: 853
