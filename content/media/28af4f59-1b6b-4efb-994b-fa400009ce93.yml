@@ -22,6 +22,9 @@ default:
   created:
     -
       value: 1653058795
+  revision_translation_affected:
+    -
+      value: true
   path:
     -
       alias: ''
