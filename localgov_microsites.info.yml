@@ -35,6 +35,7 @@ install:
   # Contrib
   - admin_toolbar:admin_toolbar
   - admin_toolbar:admin_toolbar_tools
+  - default_content:default_content
   - domain:domain
   - domain:domain_config
   - domain_group:domain_group
@@ -44,6 +45,7 @@ install:
   # LocalGov Drupal
   - localgov_core:localgov_media
   - localgov_microsites:localgov_microsites_media
+  - localgov_microsites_colour_picker_fields:localgov_microsites_colour_picker_fields
   - localgov_microsites_group:localgov_microsites_group
   - localgov_microsites_group:localgov_microsites_permissions
   - localgov_page:localgov_page

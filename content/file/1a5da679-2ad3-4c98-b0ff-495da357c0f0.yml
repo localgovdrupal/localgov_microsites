@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1a5da679-2ad3-4c98-b0ff-495da357c0f0
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: istockphoto-517188688-612x612.jpeg
+  uri:
+    -
+      value: 'public://2022-05/istockphoto-517188688-612x612.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 62127
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1653058701

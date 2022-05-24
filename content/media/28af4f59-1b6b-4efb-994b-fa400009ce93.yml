@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 28af4f59-1b6b-4efb-994b-fa400009ce93
+  bundle: image
+  default_langcode: en
+  depends:
+    361435ad-0a8b-4c19-894e-14554e0410c2: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: field-6574455__340.jpeg
+  created:
+    -
+      value: 1653058795
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_media_image:
+    -
+      entity: 361435ad-0a8b-4c19-894e-14554e0410c2
+      alt: 'alt text'
+      title: ''
+      width: 511
+      height: 340

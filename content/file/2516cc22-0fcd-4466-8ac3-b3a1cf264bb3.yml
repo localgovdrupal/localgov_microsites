@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2516cc22-0fcd-4466-8ac3-b3a1cf264bb3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Sommerlandschaft-Bilder-1.jpeg
+  uri:
+    -
+      value: 'public://2022-05/Sommerlandschaft-Bilder-1.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 62105
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1653059233
