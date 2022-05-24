@@ -3,9 +3,12 @@ status: true
 dependencies:
   config:
     - filter.format.wysiwyg
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
   module:
     - filter
-    - fontawesome
+    - layout_paragraphs
     - media
     - system
 id: authenticated
@@ -20,12 +23,13 @@ permissions:
   - 'create image media'
   - 'create media'
   - 'create remote_video media'
-  - 'edit own document media'
-  - 'edit own image media'
-  - 'edit own remote_video media'
   - 'edit any document media'
   - 'edit any image media'
   - 'edit any remote_video media'
+  - 'edit layout paragraphs plugin config'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own remote_video media'
   - 'update any media'
   - 'update media'
   - 'use text format wysiwyg'
