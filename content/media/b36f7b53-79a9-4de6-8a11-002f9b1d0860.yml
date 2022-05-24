@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b36f7b53-79a9-4de6-8a11-002f9b1d0860
+  bundle: image
+  default_langcode: en
+  depends:
+    1bb57d4c-3813-464a-8d8d-f036a6b66ea8: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 1648494843074.jpeg
+  created:
+    -
+      value: 1653306748
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_media_image:
+    -
+      entity: 1bb57d4c-3813-464a-8d8d-f036a6b66ea8
+      alt: Montains
+      title: ''
+      width: 4000
+      height: 2252

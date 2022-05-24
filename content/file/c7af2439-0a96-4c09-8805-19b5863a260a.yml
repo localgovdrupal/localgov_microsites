@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c7af2439-0a96-4c09-8805-19b5863a260a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S9WgF56-jZsEUNVAAz91X4yXp9mcG2QMgxe0w6GdbBc.jpg
+  uri:
+    -
+      value: 'public://oembed_thumbnails/S9WgF56-jZsEUNVAAz91X4yXp9mcG2QMgxe0w6GdbBc.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 44700
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1653306146

@@ -35,6 +35,7 @@ install:
   # Contrib
   - admin_toolbar:admin_toolbar
   - admin_toolbar:admin_toolbar_tools
+  - default_content:default_content
   - domain:domain
   - domain:domain_config
   - domain_group:domain_group
