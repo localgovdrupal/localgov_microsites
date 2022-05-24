@@ -26,6 +26,7 @@ permissions:
   - 'edit any document media'
   - 'edit any image media'
   - 'edit any remote_video media'
+  - 'edit layout paragraphs plugin config'
   - 'update any media'
   - 'update media'
   - 'use text format wysiwyg'
