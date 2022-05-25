@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * LocalGov Drupal Microsites Media module hooks.
+ */
+
+use Drupal\Core\Session\AccountInterface;
+use Drupal\domain_group\DomainGroupHelper;
+use Drupal\group\Access\GroupAccessResult;
+
+/**
+ * Implements hook_ENTITY_TYPE_create_access() for node entities.
+ */
+function localgov_microsites_media_node_create_access(AccountInterface $account, array $context, $entity_bundle) {
+
+  // Allow group users to add media items to new nodes.
+  $group_id = \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(DomainGroupHelper::class)
+    ->getActiveDomainGroup();
+  $group = \Drupal::entityTypeManager()->getStorage('group')->load($group_id);
+  $permission = 'create group_node:' . $entity_bundle . ' entity';
+  return GroupAccessResult::allowedIfHasGroupPermissions($group, $account, [$permission], 'AND');
+}
