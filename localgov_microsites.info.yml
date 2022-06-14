@@ -34,6 +34,7 @@ install:
   - drupal:views_ui
   # Contrib
   - admin_toolbar:admin_toolbar
+  - admin_toolbar:admin_toolbar_links_access_filter
   - admin_toolbar:admin_toolbar_tools
   - default_content:default_content
   - domain:domain
