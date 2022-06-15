@@ -45,6 +45,10 @@ install:
   - twig_tweak:twig_tweak
   # LocalGov Drupal
   - localgov_core:localgov_media
+  - localgov_directories:localgov_directories
+  - localgov_directories:localgov_directories_location
+  - localgov_directories:localgov_directories_page
+  - localgov_directories:localgov_directories_venue
   - localgov_microsites:localgov_microsites_media
   - localgov_microsites_colour_picker_fields:localgov_microsites_colour_picker_fields
   - localgov_microsites_group:localgov_microsites_group
