@@ -67,7 +67,7 @@ default:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_onecol
+                  layout: localgov_layout_onecol
                   config:
                     label: ''
     -
@@ -384,7 +384,7 @@ default:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_twocol
+                  layout: localgov_layout_twocol
                   config:
                     label: ''
     -
@@ -505,7 +505,7 @@ default:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_twocol
+                  layout: localgov_layout_twocol
                   config:
                     label: ''
     -
@@ -616,7 +616,7 @@ default:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_twocol
+                  layout: localgov_layout_twocol
                   config:
                     label: ''
           revision_translation_affected:
@@ -845,7 +845,7 @@ default:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_threecol_33_34_33
+                  layout: localgov_layout_threecol_33_34_33
                   config:
                     label: ''
           revision_translation_affected:
@@ -1052,7 +1052,7 @@ default:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_threecol_33_34_33
+                  layout: localgov_layout_threecol_33_34_33
                   config:
                     label: ''
           revision_translation_affected:
@@ -1346,7 +1346,7 @@ default:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_onecol
+                  layout: localgov_layout_onecol
                   config:
                     label: ''
           revision_translation_affected:
