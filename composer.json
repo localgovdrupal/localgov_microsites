@@ -16,7 +16,7 @@
         "drupal/core": "^9.3",
         "drupal/default_content": "^2.0@alpha",
         "drupal/domain_group": "3.x-dev",
-        "drupal/gin": "3.0-beta2",
+        "drupal/gin": "3.x-dev",
         "drupal/gin_login": "^1.0@RC",
         "drupal/gin_toolbar": "^1.0@beta",
         "localgovdrupal/localgov_core": "^2.1.0",
