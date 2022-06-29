@@ -44,7 +44,29 @@ default:
       langcode: en
   localgov_page_banner:
     -
-      entity: 7599711d-341b-41ff-ae1e-89654f70cbd1
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: bf617c4b-7d26-4131-b63b-ba8c058f1385
+          bundle: localgov_banner_secondary
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1656509308
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_image:
+            -
+              entity: aa8b4b9c-f74d-4e30-bf51-afbc005a2470
   localgov_page_content:
     -
       entity:
