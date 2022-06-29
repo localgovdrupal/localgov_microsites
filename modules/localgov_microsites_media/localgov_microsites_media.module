@@ -15,9 +15,7 @@ use Drupal\group\Access\GroupAccessResult;
 function localgov_microsites_media_node_create_access(AccountInterface $account, array $context, $entity_bundle) {
 
   // Allow group users to add media items to new nodes.
-  $group_id = \Drupal::service('class_resolver')
-    ->getInstanceFromDefinition(DomainGroupHelper::class)
-    ->getActiveDomainGroup();
+  $group_id = \Drupal::service('domain_group_resolver')->getActiveDomainGroupId();
   $group = \Drupal::entityTypeManager()->getStorage('group')->load($group_id);
   $permission = 'create group_node:' . $entity_bundle . ' entity';
   return GroupAccessResult::allowedIfHasGroupPermissions($group, $account, [$permission], 'AND');
