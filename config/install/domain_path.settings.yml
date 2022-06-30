@@ -1,0 +1,4 @@
+entity_types:
+  node: '1'
+hide_path_alias_ui: true
+language_method: language_content
