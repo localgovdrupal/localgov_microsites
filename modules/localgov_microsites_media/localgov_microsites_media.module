@@ -6,7 +6,6 @@
  */
 
 use Drupal\Core\Session\AccountInterface;
-use Drupal\domain_group\DomainGroupHelper;
 use Drupal\group\Access\GroupAccessResult;
 
 /**
