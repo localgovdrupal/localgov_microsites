@@ -9,6 +9,7 @@ dependencies:
   module:
     - filter
     - layout_paragraphs
+    - localgov_directories
     - media
     - system
 id: authenticated
@@ -19,13 +20,16 @@ permissions:
   - 'access content'
   - 'access media overview'
   - 'administer media'
+  - 'create directory facets'
   - 'create document media'
   - 'create image media'
   - 'create media'
   - 'create remote_video media'
+  - 'delete directory facets'
   - 'edit any document media'
   - 'edit any image media'
   - 'edit any remote_video media'
+  - 'edit directory facets'
   - 'edit layout paragraphs plugin config'
   - 'edit own document media'
   - 'edit own image media'
@@ -34,6 +38,7 @@ permissions:
   - 'update media'
   - 'use text format wysiwyg'
   - 'view all media revisions'
+  - 'view directory facets'
   - 'view media'
   - 'view own unpublished media'
   - 'view the administration theme'
