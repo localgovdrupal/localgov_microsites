@@ -48,10 +48,9 @@ install:
   - localgov_core:localgov_media
   - localgov_microsites:localgov_microsites_media
   - localgov_microsites_colour_picker_fields:localgov_microsites_colour_picker_fields
+  - localgov_microsites_group:localgov_microsites_directories
   - localgov_microsites_group:localgov_microsites_group
   - localgov_microsites_group:localgov_microsites_permissions
-  - localgov_page:localgov_page
-  - localgov_subsites:localgov_subsites
 
 themes:
   - localgov_microsites_base
