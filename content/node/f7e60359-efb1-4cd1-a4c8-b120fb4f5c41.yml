@@ -5,13 +5,14 @@ _meta:
   bundle: localgov_page
   default_langcode: en
   depends:
+    aa8b4b9c-f74d-4e30-bf51-afbc005a2470: media
     5bd95426-2307-47b8-8701-7e10421d7d2d: media
     b36f7b53-79a9-4de6-8a11-002f9b1d0860: media
     83a2e6c9-5ec4-43e0-a861-1e323545350b: media
-    aa8b4b9c-f74d-4e30-bf51-afbc005a2470: media
     816cf5b4-18b8-449e-b96c-c4e6ede3f51e: media
     28af4f59-1b6b-4efb-994b-fa400009ce93: media
     7599711d-341b-41ff-ae1e-89654f70cbd1: media
+    731ee019-1444-4170-870b-623a1cd3f691: media
 default:
   revision_uid:
     -
@@ -61,9 +62,6 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
-            -
-              value: true
           localgov_image:
             -
               entity: aa8b4b9c-f74d-4e30-bf51-afbc005a2470
@@ -92,9 +90,6 @@ default:
                   layout: localgov_layout_onecol
                   config:
                     label: ''
-          revision_translation_affected:
-            -
-              value: true
           lgms_width_of_section:
             -
               value: contained-content
@@ -122,9 +117,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 0
-          revision_translation_affected:
-            -
-              value: true
           localgov_text:
             -
               value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum urna nibh, vel ullamcorper libero volutpat nec. Proin dapibus et elit eu placerat. Phasellus at lacus nec tellus lacinia molestie. Maecenas convallis magna sit amet augue imperdiet auctor. Sed imperdiet odio nibh, vitae aliquam sem molestie eu. Sed et elit rhoncus, ultrices tellus et, viverra velit. Curabitur dictum commodo urna. Donec leo mauris, vestibulum ac finibus sit amet, aliquam eu felis. Fusce fermentum ultricies nibh, et lacinia lacus aliquet viverra. Donec porta, leo sit amet viverra aliquet, augue nisi congue urna, quis ornare nulla turpis ut sem. Nullam sed pretium ex.</p>\r\n\r\n<h2>Heading 2</h2>\r\n\r\n<p>Proin eu odio libero. Maecenas ullamcorper posuere faucibus. Sed semper nisl elit, eu ornare odio fermentum eu. Cras non semper augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam nec interdum odio, sit amet iaculis ligula. Fusce ullamcorper in nisi vitae molestie. Duis sollicitudin ante vel mi porta rhoncus. Vestibulum id egestas enim. Cras volutpat consectetur enim, at elementum lorem gravida id. Morbi tellus orci, consequat eget ullamcorper sed, gravida eget odio. Curabitur in ultricies purus.</p>\r\n\r\n<h3>Heading 3</h3>\r\n\r\n<p>Proin in sagittis magna. Mauris eu ipsum sed turpis egestas commodo. Nulla et mi sit amet sapien luctus consectetur. Fusce vulputate eleifend metus, eleifend fermentum massa rutrum id. Curabitur porta elit vitae eros pellentesque, sit amet luctus ante suscipit. Vestibulum egestas arcu ut venenatis tincidunt. Donec pulvinar et nisi nec ornare.</p>\r\n\r\n<h4>Heading 4</h4>\r\n\r\n<p>Vestibulum vitae tellus sem. Ut condimentum tincidunt egestas. Fusce in aliquam nunc, in rhoncus purus. Phasellus ut dignissim eros. In eu convallis neque. Ut et tempus massa, at gravida erat. Sed sed tristique libero. Fusce eget justo malesuada, luctus quam in, egestas sem. Nullam hendrerit arcu eu felis congue, sollicitudin pharetra augue egestas. Sed tincidunt arcu ac turpis fringilla blandit. Nulla facilisi.</p>\r\n\r\n<h5>Heading 5</h5>\r\n\r\n<p>Vivamus nisi mi, vehicula nec pharetra sit amet, finibus eu tortor. Suspendisse ac felis vitae dui mollis auctor. Fusce at dapibus augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque quis dictum nisi. Mauris tellus nisl, condimentum nec neque et, posuere aliquet lorem.</p>\r\n\r\n<h6>Heading 6</h6>\r\n\r\n<p>Cras non sollicitudin sapien, ut suscipit nibh. Fusce gravida rhoncus justo in imperdiet. Quisque ut blandit ipsum, at interdum magna. Morbi mollis nisl id nunc facilisis volutpat. In congue vitae arcu sagittis sagittis. Donec nec libero pharetra, ultrices risus egestas, consectetur erat.</p>\r\n"
@@ -153,9 +145,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 0
-          revision_translation_affected:
-            -
-              value: true
           localgov_heading_level:
             -
               value: h2
@@ -178,9 +167,6 @@ default:
                   behavior_settings:
                     -
                       value: {  }
-                  revision_translation_affected:
-                    -
-                      value: true
                   localgov_body_text:
                     -
                       value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum urna nibh, vel ullamcorper libero volutpat nec. Proin dapibus et elit eu placerat. Phasellus at lacus nec tellus lacinia molestie. Maecenas convallis magna sit amet augue imperdiet auctor. Sed imperdiet odio nibh, vitae aliquam sem molestie eu. Sed et elit rhoncus, ultrices tellus et, viverra velit. Curabitur dictum commodo urna. Donec leo mauris, vestibulum ac finibus sit amet, aliquam eu felis. Fusce fermentum ultricies nibh, et lacinia lacus aliquet viverra. Donec porta, leo sit amet viverra aliquet, augue nisi congue urna, quis ornare nulla turpis ut sem. Nullam sed pretium ex.</p>\r\n"
@@ -209,9 +195,6 @@ default:
                   behavior_settings:
                     -
                       value: {  }
-                  revision_translation_affected:
-                    -
-                      value: true
                   localgov_body_text:
                     -
                       value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum urna nibh, vel ullamcorper libero volutpat nec. Proin dapibus et elit eu placerat. Phasellus at lacus nec tellus lacinia molestie. Maecenas convallis magna sit amet augue imperdiet auctor. Sed imperdiet odio nibh, vitae aliquam sem molestie eu. Sed et elit rhoncus, ultrices tellus et, viverra velit. Curabitur dictum commodo urna. Donec leo mauris, vestibulum ac finibus sit amet, aliquam eu felis. Fusce fermentum ultricies nibh, et lacinia lacus aliquet viverra. Donec porta, leo sit amet viverra aliquet, augue nisi congue urna, quis ornare nulla turpis ut sem. Nullam sed pretium ex.</p>\r\n"
@@ -249,9 +232,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 0
-          revision_translation_affected:
-            -
-              value: true
           localgov_heading_level:
             -
               value: h2
@@ -303,9 +283,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 0
-          revision_translation_affected:
-            -
-              value: true
           localgov_heading_level:
             -
               value: h2
@@ -357,9 +334,6 @@ default:
                   layout: localgov_layout_onecol
                   config:
                     label: ''
-          revision_translation_affected:
-            -
-              value: true
           lgms_width_of_section:
             -
               value: full-width
@@ -387,9 +361,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 5
-          revision_translation_affected:
-            -
-              value: true
           localgov_background_image:
             -
               entity: 83a2e6c9-5ec4-43e0-a861-1e323545350b
@@ -438,9 +409,6 @@ default:
                   layout: localgov_layout_twocol
                   config:
                     label: ''
-          revision_translation_affected:
-            -
-              value: true
           lgms_width_of_section:
             -
               value: full-width-contained-content
@@ -468,9 +436,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 7
-          revision_translation_affected:
-            -
-              value: true
           localgov_heading_level:
             -
               value: h2
@@ -517,9 +482,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 7
-          revision_translation_affected:
-            -
-              value: true
           localgov_heading_level:
             -
               value: h2
@@ -566,9 +528,6 @@ default:
                   layout: localgov_layout_twocol
                   config:
                     label: ''
-          revision_translation_affected:
-            -
-              value: true
           lgms_width_of_section:
             -
               value: contained-content
@@ -596,9 +555,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 10
-          revision_translation_affected:
-            -
-              value: true
           localgov_text:
             -
               value: "<p>Diam vulputate ut pharetra sit amet aliquam id diam maecenas. Arcu non odio euismod lacinia at quis. Placerat vestibulum lectus mauris ultrices eros in. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Facilisis magna etiam tempor orci eu lobortis elementum. Nisi vitae suscipit tellus mauris. Posuere lorem ipsum dolor sit. Eu facilisis sed odio morbi quis commodo odio. Nunc sed blandit libero volutpat. Ut etiam sit amet nisl purus in. Fusce ut placerat orci nulla pellentesque dignissim.</p>\r\n\r\n<p>A lacus vestibulum sed arcu non odio. Vel elit scelerisque mauris pellentesque pulvinar. Urna porttitor rhoncus dolor purus non. Elit ut aliquam purus sit amet. Penatibus et magnis dis parturient montes nascetur ridiculus. Tristique sollicitudin nibh sit amet commodo nulla facilisi. Diam maecenas ultricies mi eget. Neque egestas congue quisque egestas diam in.</p>\r\n\r\n<p>Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Rhoncus urna neque viverra justo nec ultrices dui. Adipiscing tristique risus nec feugiat. Turpis nunc eget lorem dolor. Netus et malesuada fames ac. Et sollicitudin ac orci phasellus egestas. Mus mauris vitae ultricies leo integer. Id diam vel quam elementum pulvinar etiam non quam lacus. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Libero volutpat sed cras ornare arcu dui. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Mattis rhoncus urna neque viverra. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Ornare suspendisse sed nisi lacus sed viverra tellus in. Dignissim sodales ut eu sem integer vitae.</p>\r\n"
@@ -627,9 +583,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 10
-          revision_translation_affected:
-            -
-              value: true
           localgov_caption:
             -
               value: "<p>Caption goes here</p>\r\n"
@@ -661,9 +614,6 @@ default:
                   layout: localgov_layout_onecol
                   config:
                     label: ''
-          revision_translation_affected:
-            -
-              value: true
           lgms_width_of_section:
             -
               value: contained-breakout
@@ -691,9 +641,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 13
-          revision_translation_affected:
-            -
-              value: true
           localgov_heading_level:
             -
               value: h2
@@ -842,9 +789,6 @@ default:
                   layout: localgov_layout_threecol_33_34_33
                   config:
                     label: ''
-          revision_translation_affected:
-            -
-              value: true
           lgms_width_of_section:
             -
               value: contained-content
@@ -872,9 +816,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 15
-          revision_translation_affected:
-            -
-              value: true
           localgov_ia_block_link:
             -
               uri: 'internal:/'
@@ -923,9 +864,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 15
-          revision_translation_affected:
-            -
-              value: true
           localgov_ia_block_links:
             -
               uri: 'internal:/'
@@ -969,9 +907,6 @@ default:
                   layout: ''
                   config: {  }
                   parent_delta: 15
-          revision_translation_affected:
-            -
-              value: true
           localgov_ia_block_links:
             -
               uri: 'internal:/'
@@ -991,6 +926,474 @@ default:
           localgov_ia_block_title:
             -
               value: 'IA block 3'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
+          bundle: localgov_page_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291484
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: localgov_layout_threecol_33_34_33
+                  config:
+                    label: ''
+          revision_translation_affected:
+            -
+              value: true
+          lgms_width_of_section:
+            -
+              value: contained-content
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d71966b2-b84a-497d-9336-d6448dbac6da
+          bundle: localgov_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291508
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: first
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_text:
+            -
+              value: "<p>Eros in cursus turpis massa tincidunt dui ut. Vel fringilla est ullamcorper eget nulla facilisi. Gravida arcu ac tortor dignissim convallis aenean et. Morbi leo urna molestie at elementum eu. Ut enim blandit volutpat maecenas volutpat. Ipsum consequat nisl vel pretium lectus.</p>\r\n\r\n<p class=\"callout callout-primary\">Pellentesque sit amet porttitor eget. Sit amet tellus cras adipiscing enim eu.</p>\r\n"
+              format: wysiwyg
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5e69fafb-6c2a-4f7c-bd3c-e936ac0596d9
+          bundle: localgov_image
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291545
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: first
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_caption:
+            -
+              value: "<p>Cliffs of Moher</p>\r\n"
+              format: wysiwyg
+          localgov_image:
+            -
+              entity: 5bd95426-2307-47b8-8701-7e10421d7d2d
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0980c099-a80f-472b-9aac-c7d876e3fff6
+          bundle: localgov_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291559
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: first
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_text:
+            -
+              value: "<p>Volutpat odio facilisis mauris sit amet. Amet venenatis urna cursus eget nunc. Diam quam nulla porttitor massa. Dignissim diam quis enim lobortis scelerisque fermentum dui. Lectus mauris ultrices eros in cursus. Posuere sollicitudin aliquam ultrices sagittis orci a. Risus commodo viverra maecenas accumsan lacus vel. In vitae turpis massa sed elementum tempus egestas sed sed.</p>\r\n"
+              format: wysiwyg
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 42f0d860-e69f-42a9-a3ac-2f20fa8a3b33
+          bundle: localgov_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291567
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: second
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_text:
+            -
+              value: "<p>A lacus vestibulum sed arcu non odio. Vel elit scelerisque mauris pellentesque pulvinar. Urna porttitor rhoncus dolor purus non. Elit ut aliquam purus sit amet. Penatibus et magnis dis parturient montes nascetur ridiculus. Tristique sollicitudin nibh sit amet commodo nulla facilisi. Diam maecenas ultricies mi eget. Neque egestas congue quisque egestas diam in. Vitae congue eu consequat ac felis donec et odio pellentesque.</p>\r\n\r\n<h3>Heading 3</h3>\r\n\r\n<p>Tortor condimentum lacinia quis vel eros donec ac. Bibendum enim facilisis gravida neque. Bibendum at varius vel pharetra vel. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Dolor sit amet consectetur adipiscing elit. In fermentum posuere urna nec tincidunt praesent. Facilisis volutpat est velit egestas dui id. Lacus sed viverra tellus in hac habitasse. Mauris ultrices eros in cursus turpis massa tincidunt dui ut.</p>\r\n\r\n<p>Nisi vitae suscipit tellus mauris. Posuere lorem ipsum dolor sit. Eu facilisis sed odio morbi quis commodo odio. Nunc sed blandit libero volutpat. Ut etiam sit amet nisl purus in. Fusce ut placerat orci nulla pellentesque dignissim.</p>\r\n"
+              format: wysiwyg
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 60e7b032-c339-4ad5-9e4b-a7e3bf0d10f5
+          bundle: localgov_call_out_box
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291669
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: second
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_body_text:
+            -
+              value: "<p>Posuere urna nec tincidunt praesent semper feugiat. Ut aliquam purus sit amet luctus venenatis. Aenean et tortor at risus viverra adipiscing at. Scelerisque purus semper eget duis at tellus at urna condimentum.&nbsp;</p>\r\n"
+              format: wysiwyg
+          localgov_button:
+            -
+              uri: 'internal:/'
+              title: 'Call out box link'
+              options: {  }
+          localgov_colour_theme:
+            -
+              value: default
+          localgov_header_text:
+            -
+              value: 'Call out box without background'
+          localgov_heading_level:
+            -
+              value: h2
+          localgov_opens_in_a_new_window:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 278c6147-cb8c-4169-9d43-a14d2add2bca
+          bundle: localgov_quote
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291592
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: third
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_author:
+            -
+              value: 'Noam Chomsky'
+          localgov_text_plain:
+            -
+              value: "Education must provide the opportunities for self-fulfillment; it can at best provide a rich and challenging environment for the individual to explore, in his own way.\r\n"
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6081cd03-209c-4e40-bd11-4ce3644117a1
+          bundle: localgov_link
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291610
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: third
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_title:
+            -
+              value: 'Link button'
+          localgov_url:
+            -
+              value: /
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 02a20d68-92d0-458e-aa41-a3b3a0a5e544
+          bundle: localgov_call_out_box
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291625
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: third
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_background_image:
+            -
+              entity: 7599711d-341b-41ff-ae1e-89654f70cbd1
+          localgov_body_text:
+            -
+              value: "<p>Posuere urna nec tincidunt praesent semper feugiat. Ut aliquam purus sit amet luctus venenatis. Aenean et tortor at risus viverra adipiscing at. Scelerisque purus semper eget duis at tellus at urna condimentum.</p>\r\n"
+              format: wysiwyg
+          localgov_button:
+            -
+              uri: 'internal:/'
+              title: 'Call out box link'
+              options: {  }
+          localgov_colour_theme:
+            -
+              value: default
+          localgov_header_text:
+            -
+              value: 'Call out box'
+          localgov_heading_level:
+            -
+              value: h2
+          localgov_opens_in_a_new_window:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 71047741-0031-4db4-8b04-7a80560ce90a
+          bundle: localgov_page_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291702
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: localgov_layout_onecol
+                  config:
+                    label: ''
+          revision_translation_affected:
+            -
+              value: true
+          lgms_width_of_section:
+            -
+              value: contained-content
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: cc509db9-7d02-4eda-91cb-fac66338e75d
+          bundle: localgov_table
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291719
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: content
+                  parent_uuid: 71047741-0031-4db4-8b04-7a80560ce90a
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_table:
+            -
+              value:
+                0:
+                  - 'Header 1'
+                  - 'Header 2'
+                  - 'Header 3'
+                  - 'Header 4'
+                  - 'Header 5'
+                1:
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                2:
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                3:
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                4:
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                caption: 'Sample table'
+              format: wysiwyg
+              caption: 'Sample table'
+          localgov_table_theme:
+            -
+              value: headed
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2df69bb9-587d-4ed7-905b-68e17dd9862f
+          bundle: localgov_page_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291803
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: localgov_layout_onecol
+                  config:
+                    label: ''
+          revision_translation_affected:
+            -
+              value: true
+          lgms_width_of_section:
+            -
+              value: contained-breakout
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b7d749de-374b-4d3e-8fa1-f6233c4539ce
+          bundle: localgov_video
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291816
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: content
+                  parent_uuid: 2df69bb9-587d-4ed7-905b-68e17dd9862f
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_video:
+            -
+              entity: 731ee019-1444-4170-870b-623a1cd3f691
   localgov_page_summary:
     -
       value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed est erat. Mauris et auctor nunc. Donec vehicula eget tellus in dictum. Curabitur eu odio est. Nunc nec dapibus nibh. Morbi id augue quis justo sollicitudin facilisis. Nullam luctus eget augue sit amet hendrerit. '
