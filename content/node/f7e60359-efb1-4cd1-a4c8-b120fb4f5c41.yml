@@ -65,7 +65,7 @@ default:
           localgov_image:
             -
               entity: aa8b4b9c-f74d-4e30-bf51-afbc005a2470
-  localgov_page_content:
+  localgov_paragraph_content:
     -
       entity:
         _meta:
@@ -90,7 +90,7 @@ default:
                   layout: localgov_layout_onecol
                   config:
                     label: ''
-          lgms_width_of_section:
+          localgov_width_of_section:
             -
               value: contained-content
     -
@@ -334,7 +334,7 @@ default:
                   layout: localgov_layout_onecol
                   config:
                     label: ''
-          lgms_width_of_section:
+          localgov_width_of_section:
             -
               value: full-width
     -
@@ -409,7 +409,7 @@ default:
                   layout: localgov_layout_twocol
                   config:
                     label: ''
-          lgms_width_of_section:
+          localgov_width_of_section:
             -
               value: full-width-contained-content
     -
@@ -528,7 +528,7 @@ default:
                   layout: localgov_layout_twocol
                   config:
                     label: ''
-          lgms_width_of_section:
+          localgov_width_of_section:
             -
               value: contained-content
     -
@@ -614,7 +614,7 @@ default:
                   layout: localgov_layout_onecol
                   config:
                     label: ''
-          lgms_width_of_section:
+          localgov_width_of_section:
             -
               value: contained-breakout
     -
@@ -789,7 +789,7 @@ default:
                   layout: localgov_layout_threecol_33_34_33
                   config:
                     label: ''
-          lgms_width_of_section:
+          localgov_width_of_section:
             -
               value: contained-content
     -
@@ -953,7 +953,7 @@ default:
           revision_translation_affected:
             -
               value: true
-          lgms_width_of_section:
+          localgov_width_of_section:
             -
               value: contained-content
     -
@@ -1267,7 +1267,7 @@ default:
           revision_translation_affected:
             -
               value: true
-          lgms_width_of_section:
+          localgov_width_of_section:
             -
               value: contained-content
     -
@@ -1362,7 +1362,7 @@ default:
           revision_translation_affected:
             -
               value: true
-          lgms_width_of_section:
+          localgov_width_of_section:
             -
               value: contained-breakout
     -
