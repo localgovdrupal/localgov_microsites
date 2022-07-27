@@ -22,7 +22,7 @@
         "drupal/gin_login": "^1.0@RC",
         "drupal/gin_toolbar": "^1.0@beta",
         "localgovdrupal/localgov_core": "^2.1.0",
-        "localgovdrupal/localgov_directories": "^2.1",
+        "localgovdrupal/localgov_directories": "^2.2",
         "localgovdrupal/localgov_events": "^2.0",
         "localgovdrupal/localgov_subsites": "^2.0.0",
         "localgovdrupal/localgov_microsites_group": "1.x-dev",
