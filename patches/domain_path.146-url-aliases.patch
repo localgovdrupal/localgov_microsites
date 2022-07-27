@@ -1,0 +1,17 @@
+diff --git a/domain_path.module b/domain_path.module
+index 33e80c8..29009cb 100755
+--- a/domain_path.module
++++ b/domain_path.module
+@@ -18,6 +18,12 @@ function domain_path_form_alter(&$form, &$form_state, $form_id) {
+     && ($entity = $object->getEntity())) {
+     $domain_path_helper = \Drupal::service('domain_path.helper');
+     if ($domain_path_helper->domainPathsIsEnabled($entity)) {
++      if ($form_state->get('group_wizard')) {
++        if (\Drupal::currentUser()->hasPermission('administer group')) {
++          \Drupal::messenger()->addWarning(t('Domain paths do not work with multi-step wizard Group Content.'));
++        }
++        return;
++      }
+       $domain_path_helper->alterEntityForm($form, $form_state, $entity);
+     }
+   }

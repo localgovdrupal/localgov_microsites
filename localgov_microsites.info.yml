@@ -41,6 +41,7 @@ install:
   - domain:domain
   - domain:domain_config
   - domain_group:domain_group
+  - domain_path:domain_path
   - group:group
   - group_permissions:group_permissions
   - twig_tweak:twig_tweak
