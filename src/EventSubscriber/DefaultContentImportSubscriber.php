@@ -32,7 +32,7 @@ class DefaultContentImportSubscriber implements EventSubscriberInterface {
   /**
    * Kernel request event handler.
    *
-   * @param \Symfony\Component\HttpKernel\Event\GetResponseEvent $event
+   * @param \Drupal\default_content\Event\ImportEvent $event
    *   Response event.
    */
   public function onContentImport(ImportEvent $event) {
