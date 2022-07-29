@@ -1,0 +1,6 @@
+services:
+  localgov_microsites.event_subscriber:
+    class: Drupal\localgov_microsites\EventSubscriber\DefaultContentImportSubscriber
+    arguments: ['@config.factory']
+    tags:
+      - { name: event_subscriber }
