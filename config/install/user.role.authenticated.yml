@@ -7,7 +7,6 @@ dependencies:
     - media.type.image
     - media.type.remote_video
   module:
-    - domain_path
     - filter
     - layout_paragraphs
     - localgov_directories
@@ -30,7 +29,6 @@ permissions:
   - 'edit any document media'
   - 'edit any image media'
   - 'edit any remote_video media'
-  - 'edit domain path entity'
   - 'edit directory facets'
   - 'edit layout paragraphs plugin config'
   - 'edit own document media'
