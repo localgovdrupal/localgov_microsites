@@ -36,6 +36,7 @@ install:
   - admin_toolbar:admin_toolbar
   - admin_toolbar:admin_toolbar_links_access_filter
   - admin_toolbar:admin_toolbar_tools
+  - autosave_form:autosave_form
   - default_content:default_content
   - domain:domain
   - domain:domain_config
@@ -47,10 +48,11 @@ install:
   - localgov_core:localgov_media
   - localgov_microsites:localgov_microsites_media
   - localgov_microsites_colour_picker_fields:localgov_microsites_colour_picker_fields
+  - localgov_microsites_group:localgov_microsites_directories
+  - localgov_microsites_group:localgov_microsites_events
   - localgov_microsites_group:localgov_microsites_group
+  - localgov_microsites_group:localgov_microsites_news
   - localgov_microsites_group:localgov_microsites_permissions
-  - localgov_page:localgov_page
-  - localgov_subsites:localgov_subsites
 
 themes:
   - localgov_microsites_base

@@ -5,13 +5,13 @@ _meta:
   bundle: localgov_page
   default_langcode: en
   depends:
-    7599711d-341b-41ff-ae1e-89654f70cbd1: media
-    83a2e6c9-5ec4-43e0-a861-1e323545350b: media
-    b36f7b53-79a9-4de6-8a11-002f9b1d0860: media
-    816cf5b4-18b8-449e-b96c-c4e6ede3f51e: media
     aa8b4b9c-f74d-4e30-bf51-afbc005a2470: media
-    28af4f59-1b6b-4efb-994b-fa400009ce93: media
     5bd95426-2307-47b8-8701-7e10421d7d2d: media
+    b36f7b53-79a9-4de6-8a11-002f9b1d0860: media
+    83a2e6c9-5ec4-43e0-a861-1e323545350b: media
+    816cf5b4-18b8-449e-b96c-c4e6ede3f51e: media
+    28af4f59-1b6b-4efb-994b-fa400009ce93: media
+    7599711d-341b-41ff-ae1e-89654f70cbd1: media
     731ee019-1444-4170-870b-623a1cd3f691: media
 default:
   revision_uid:
@@ -28,7 +28,7 @@ default:
       value: 'Welcome to your new site'
   created:
     -
-      value: 1653387690
+      value: 1657281009
   promote:
     -
       value: true
@@ -42,16 +42,36 @@ default:
     -
       alias: ''
       langcode: en
+      pathauto: 0
   localgov_page_banner:
-    -
-      entity: 7599711d-341b-41ff-ae1e-89654f70cbd1
-  localgov_page_content:
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 1b6466e3-f55f-4c76-a113-54853a8fa30a
+          uuid: fa5dae8a-0ccb-4337-b174-23bce19eccd9
+          bundle: localgov_banner_secondary
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657282466
+          behavior_settings:
+            -
+              value: {  }
+          localgov_image:
+            -
+              entity: aa8b4b9c-f74d-4e30-bf51-afbc005a2470
+  localgov_paragraph_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: eaccb5d5-a392-411c-8071-9579b38ce885
           bundle: localgov_page_section
           default_langcode: en
         default:
@@ -60,22 +80,25 @@ default:
               value: true
           created:
             -
-              value: 1653387724
+              value: 1657281009
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_onecol
+                  layout: localgov_layout_onecol
                   config:
                     label: ''
+          localgov_width_of_section:
+            -
+              value: contained-content
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 222a2824-4ac4-4d10-871b-c28fde113054
+          uuid: 2c32b0e1-5dca-4cca-8ebc-3ac907fb9c72
           bundle: localgov_text
           default_langcode: en
         default:
@@ -84,13 +107,13 @@ default:
               value: true
           created:
             -
-              value: 1653387735
+              value: 1657281036
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: content
-                  parent_uuid: 1b6466e3-f55f-4c76-a113-54853a8fa30a
+                  parent_uuid: eaccb5d5-a392-411c-8071-9579b38ce885
                   layout: ''
                   config: {  }
                   parent_delta: 0
@@ -103,7 +126,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: d42042ca-cb91-440c-8651-82554554b2f5
+          uuid: 503a73ed-c208-4c41-a508-7311c8070d11
           bundle: localgov_accordion
           default_langcode: en
         default:
@@ -112,13 +135,13 @@ default:
               value: true
           created:
             -
-              value: 1653387756
+              value: 1657281047
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: content
-                  parent_uuid: 1b6466e3-f55f-4c76-a113-54853a8fa30a
+                  parent_uuid: eaccb5d5-a392-411c-8071-9579b38ce885
                   layout: ''
                   config: {  }
                   parent_delta: 0
@@ -131,7 +154,7 @@ default:
                 _meta:
                   version: '1.0'
                   entity_type: paragraph
-                  uuid: 9cc54f33-3e41-4996-b210-5360473501d0
+                  uuid: 41af6577-2c74-4ca0-bb9b-b577864986e5
                   bundle: localgov_accordion_pane
                   default_langcode: en
                 default:
@@ -140,13 +163,13 @@ default:
                       value: true
                   created:
                     -
-                      value: 1653387756
+                      value: 1657281047
                   behavior_settings:
                     -
                       value: {  }
                   localgov_body_text:
                     -
-                      value: "<p>Ut ac dignissim quam. Maecenas vel libero at mauris auctor auctor vitae in odio. Praesent lobortis pretium urna, at vulputate neque mattis a. Aliquam semper ac ex sed ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In tempus lorem augue, scelerisque ullamcorper lectus ullamcorper eu. Proin sed bibendum ex. Mauris quis blandit elit.</p>\r\n\r\n<p>Aliquam vehicula elit sed hendrerit facilisis. Morbi feugiat tincidunt metus, sed malesuada enim vulputate non. Curabitur lectus risus, imperdiet pharetra pellentesque at, interdum quis ligula. Donec id eleifend nibh. Sed nec erat ultrices, maximus augue sit amet, scelerisque lacus. Sed vel sapien nisl. Integer eleifend eu ipsum eget feugiat. Suspendisse tincidunt elementum egestas. Ut ut varius risus, rhoncus varius nibh. Praesent iaculis nisi et metus imperdiet, eget feugiat nisl vehicula. Donec aliquet sem in gravida luctus. Pellentesque sit amet magna et metus luctus pretium. Pellentesque mattis placerat maximus. Mauris maximus leo nisi, in congue velit luctus sit amet.</p>\r\n\r\n<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vel tempus neque. Vestibulum rhoncus ornare commodo. Sed sed porta dui. Vivamus at volutpat nibh. Suspendisse felis sapien, sodales ut ornare eu, tristique ut nulla. Nulla elementum justo at ullamcorper ornare. Aenean dolor est, elementum ut lectus at, ultrices maximus est. Nam ut velit vitae ipsum lobortis ullamcorper. Nulla facilisi. Nulla turpis felis, euismod at consequat eget, sagittis vel quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque ac velit enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\r\n"
+                      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum urna nibh, vel ullamcorper libero volutpat nec. Proin dapibus et elit eu placerat. Phasellus at lacus nec tellus lacinia molestie. Maecenas convallis magna sit amet augue imperdiet auctor. Sed imperdiet odio nibh, vitae aliquam sem molestie eu. Sed et elit rhoncus, ultrices tellus et, viverra velit. Curabitur dictum commodo urna. Donec leo mauris, vestibulum ac finibus sit amet, aliquam eu felis. Fusce fermentum ultricies nibh, et lacinia lacus aliquet viverra. Donec porta, leo sit amet viverra aliquet, augue nisi congue urna, quis ornare nulla turpis ut sem. Nullam sed pretium ex.</p>\r\n"
                       format: wysiwyg
                   localgov_heading_level:
                     -
@@ -159,7 +182,7 @@ default:
                 _meta:
                   version: '1.0'
                   entity_type: paragraph
-                  uuid: 191927c2-3df1-48d7-8664-3c0d8a5a8c70
+                  uuid: b621f6e1-435a-4232-8f3a-d15a0ae5900c
                   bundle: localgov_accordion_pane
                   default_langcode: en
                 default:
@@ -168,13 +191,13 @@ default:
                       value: true
                   created:
                     -
-                      value: 1653387793
+                      value: 1657281091
                   behavior_settings:
                     -
                       value: {  }
                   localgov_body_text:
                     -
-                      value: "<p>Aliquam vehicula elit sed hendrerit facilisis. Morbi feugiat tincidunt metus, sed malesuada enim vulputate non. Curabitur lectus risus, imperdiet pharetra pellentesque at, interdum quis ligula. Donec id eleifend nibh. Sed nec erat ultrices, maximus augue sit amet, scelerisque lacus. Sed vel sapien nisl. Integer eleifend eu ipsum eget feugiat. Suspendisse tincidunt elementum egestas. Ut ut varius risus, rhoncus varius nibh. Praesent iaculis nisi et metus imperdiet, eget feugiat nisl vehicula. Donec aliquet sem in gravida luctus. Pellentesque sit amet magna et metus luctus pretium. Pellentesque mattis placerat maximus. Mauris maximus leo nisi, in congue velit luctus sit amet.</p>\r\n\r\n<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vel tempus neque. Vestibulum rhoncus ornare commodo. Sed sed porta dui. Vivamus at volutpat nibh. Suspendisse felis sapien, sodales ut ornare eu, tristique ut nulla. Nulla elementum justo at ullamcorper ornare. Aenean dolor est, elementum ut lectus at, ultrices maximus est. Nam ut velit vitae ipsum lobortis ullamcorper. Nulla facilisi. Nulla turpis felis, euismod at consequat eget, sagittis vel quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque ac velit enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\r\n"
+                      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum urna nibh, vel ullamcorper libero volutpat nec. Proin dapibus et elit eu placerat. Phasellus at lacus nec tellus lacinia molestie. Maecenas convallis magna sit amet augue imperdiet auctor. Sed imperdiet odio nibh, vitae aliquam sem molestie eu. Sed et elit rhoncus, ultrices tellus et, viverra velit. Curabitur dictum commodo urna. Donec leo mauris, vestibulum ac finibus sit amet, aliquam eu felis. Fusce fermentum ultricies nibh, et lacinia lacus aliquet viverra. Donec porta, leo sit amet viverra aliquet, augue nisi congue urna, quis ornare nulla turpis ut sem. Nullam sed pretium ex.</p>\r\n"
                       format: wysiwyg
                   localgov_heading_level:
                     -
@@ -182,34 +205,6 @@ default:
                   localgov_title:
                     -
                       value: 'Accordion title 2'
-            -
-              entity:
-                _meta:
-                  version: '1.0'
-                  entity_type: paragraph
-                  uuid: 136bc13b-4920-40f8-b2aa-c21cdb2cbc17
-                  bundle: localgov_accordion_pane
-                  default_langcode: en
-                default:
-                  status:
-                    -
-                      value: true
-                  created:
-                    -
-                      value: 1653387807
-                  behavior_settings:
-                    -
-                      value: {  }
-                  localgov_body_text:
-                    -
-                      value: "<p>Ut ac dignissim quam. Maecenas vel libero at mauris auctor auctor vitae in odio. Praesent lobortis pretium urna, at vulputate neque mattis a. Aliquam semper ac ex sed ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In tempus lorem augue, scelerisque ullamcorper lectus ullamcorper eu. Proin sed bibendum ex. Mauris quis blandit elit.</p>\r\n\r\n<p>Aliquam vehicula elit sed hendrerit facilisis. Morbi feugiat tincidunt metus, sed malesuada enim vulputate non. Curabitur lectus risus, imperdiet pharetra pellentesque at, interdum quis ligula. Donec id eleifend nibh. Sed nec erat ultrices, maximus augue sit amet, scelerisque lacus. Sed vel sapien nisl. Integer eleifend eu ipsum eget feugiat. Suspendisse tincidunt elementum egestas. Ut ut varius risus, rhoncus varius nibh. Praesent iaculis nisi et metus imperdiet, eget feugiat nisl vehicula. Donec aliquet sem in gravida luctus. Pellentesque sit amet magna et metus luctus pretium. Pellentesque mattis placerat maximus. Mauris maximus leo nisi, in congue velit luctus sit amet.</p>\r\n\r\n<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vel tempus neque. Vestibulum rhoncus ornare commodo. Sed sed porta dui. Vivamus at volutpat nibh. Suspendisse felis sapien, sodales ut ornare eu, tristique ut nulla. Nulla elementum justo at ullamcorper ornare. Aenean dolor est, elementum ut lectus at, ultrices maximus est. Nam ut velit vitae ipsum lobortis ullamcorper. Nulla facilisi. Nulla turpis felis, euismod at consequat eget, sagittis vel quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque ac velit enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\r\n"
-                      format: wysiwyg
-                  localgov_heading_level:
-                    -
-                      value: h3
-                  localgov_title:
-                    -
-                      value: 'Accordion title 3'
           localgov_title:
             -
               value: 'Accordion section'
@@ -218,55 +213,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: e8b94c86-f3ed-450b-a99f-4fe00e00675e
-          bundle: localgov_call_out_box
-          default_langcode: en
-        default:
-          status:
-            -
-              value: true
-          created:
-            -
-              value: 1653387969
-          behavior_settings:
-            -
-              value:
-                layout_paragraphs:
-                  region: content
-                  parent_uuid: 1b6466e3-f55f-4c76-a113-54853a8fa30a
-                  layout: ''
-                  config: {  }
-                  parent_delta: 0
-          localgov_background_image:
-            -
-              entity: 83a2e6c9-5ec4-43e0-a861-1e323545350b
-          localgov_body_text:
-            -
-              value: "<p>Onterdum et malesuada fames ac ante ipsum primis in faucibus. Cras vel tempus neque. Vestibulum rhoncus ornare commodo. Sed sed porta dui. Vivamus at volutpat nibh. Suspendisse felis sapien, sodales ut ornare eu, tristique ut nulla. Nulla elementum justo at ullamcorper ornare. Aenean dolor est, elementum ut lectus at, ultrices maximus est. Nam ut velit vitae ipsum lobortis ullamcorper. Nulla facilisi. Nulla turpis felis, euismod at consequat eget, sagittis vel quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque ac velit enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\r\n"
-              format: wysiwyg
-          localgov_button:
-            -
-              uri: 'https://waronwant.org/'
-              title: 'Link of the call out box'
-              options: {  }
-          localgov_colour_theme:
-            -
-              value: default
-          localgov_header_text:
-            -
-              value: 'Call out box'
-          localgov_heading_level:
-            -
-              value: h2
-          localgov_opens_in_a_new_window:
-            -
-              value: false
-    -
-      entity:
-        _meta:
-          version: '1.0'
-          entity_type: paragraph
-          uuid: d92c790a-3dc8-46fd-b1ec-b4cddb443ccc
+          uuid: fb010666-2efa-4147-a0f5-83ff51bc6bc7
           bundle: localgov_media_with_text
           default_langcode: en
         default:
@@ -275,13 +222,13 @@ default:
               value: true
           created:
             -
-              value: 1653388075
+              value: 1657281204
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: content
-                  parent_uuid: 1b6466e3-f55f-4c76-a113-54853a8fa30a
+                  parent_uuid: eaccb5d5-a392-411c-8071-9579b38ce885
                   layout: ''
                   config: {  }
                   parent_delta: 0
@@ -290,12 +237,12 @@ default:
               value: h2
           localgov_link:
             -
-              uri: 'internal:#'
-              title: Link
+              uri: 'internal:/'
+              title: 'Link text'
               options: {  }
           localgov_media_item:
             -
-              entity: b36f7b53-79a9-4de6-8a11-002f9b1d0860
+              entity: 5bd95426-2307-47b8-8701-7e10421d7d2d
           localgov_media_position:
             -
               value: left
@@ -307,7 +254,7 @@ default:
               value: false
           localgov_text:
             -
-              value: "<p>Diam vulputate ut pharetra sit amet aliquam id diam maecenas. Arcu non odio euismod lacinia at quis. Placerat vestibulum lectus mauris ultrices eros in. Facilisi etiam dignissim diam quis enim lobortis scelerisque.&nbsp;</p>\r\n\r\n<p>Neque ornare aenean euismod elementum nisi quis. Sem integer vitae justo eget magna fermentum iaculis. Diam sit amet nisl suscipit. Rhoncus aenean vel elit scelerisque mauris pellentesque. Venenatis urna cursus eget nunc. Sem nulla pharetra diam sit amet nisl. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Commodo viverra maecenas accumsan lacus vel.</p>\r\n"
+              value: "<p>Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Facilisis magna etiam tempor orci eu lobortis elementum. Nisi vitae suscipit tellus mauris. Posuere lorem ipsum dolor sit. Eu facilisis sed odio morbi quis commodo odio. Nunc sed blandit libero volutpat. Ut etiam sit amet nisl purus in. Fusce ut placerat orci nulla pellentesque dignissim.</p>\r\n\r\n<p>Neque ornare aenean euismod elementum nisi quis. Sem integer vitae justo eget magna fermentum iaculis. Diam sit amet nisl suscipit. Rhoncus aenean vel elit scelerisque mauris pellentesque. Venenatis urna cursus eget nunc. Sem nulla pharetra diam sit amet nisl. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Commodo viverra maecenas accumsan.</p>\r\n"
               format: wysiwyg
           localgov_title:
             -
@@ -317,7 +264,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 89ea86c7-35d9-4e11-924b-3777dba253cd
+          uuid: 614e50bd-6055-48b3-8adf-2b8b26e719ac
           bundle: localgov_media_with_text
           default_langcode: en
         default:
@@ -326,13 +273,13 @@ default:
               value: true
           created:
             -
-              value: 1653388153
+              value: 1657281133
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: content
-                  parent_uuid: 1b6466e3-f55f-4c76-a113-54853a8fa30a
+                  parent_uuid: eaccb5d5-a392-411c-8071-9579b38ce885
                   layout: ''
                   config: {  }
                   parent_delta: 0
@@ -341,12 +288,12 @@ default:
               value: h2
           localgov_link:
             -
-              uri: 'internal:#'
-              title: Link
+              uri: 'internal:/'
+              title: 'Link text'
               options: {  }
           localgov_media_item:
             -
-              entity: 816cf5b4-18b8-449e-b96c-c4e6ede3f51e
+              entity: b36f7b53-79a9-4de6-8a11-002f9b1d0860
           localgov_media_position:
             -
               value: right
@@ -368,7 +315,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: f248d89a-8b69-4203-a23b-07ca1c1c25f6
+          uuid: 6bcb9791-e5ae-4ba3-8b25-ac81ebc5c021
           bundle: localgov_page_section
           default_langcode: en
         default:
@@ -377,22 +324,100 @@ default:
               value: true
           created:
             -
-              value: 1653388230
+              value: 1657281246
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_twocol
+                  layout: localgov_layout_onecol
                   config:
                     label: ''
+          localgov_width_of_section:
+            -
+              value: full-width
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 890023fd-ad97-4c9b-bf74-17b488cacde3
+          uuid: f884f29e-b876-4b8b-87b6-9bc06fa40de9
+          bundle: localgov_call_out_box
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657281256
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: content
+                  parent_uuid: 6bcb9791-e5ae-4ba3-8b25-ac81ebc5c021
+                  layout: ''
+                  config: {  }
+                  parent_delta: 5
+          localgov_background_image:
+            -
+              entity: 83a2e6c9-5ec4-43e0-a861-1e323545350b
+          localgov_body_text:
+            -
+              value: "<p>Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Facilisis magna etiam tempor orci eu lobortis elementum. Nisi vitae suscipit tellus mauris. Posuere lorem ipsum dolor sit. Eu facilisis sed odio morbi quis commodo odio. Nunc sed blandit libero volutpat. Ut etiam sit amet nisl purus in. Fusce ut placerat orci nulla pellentesque dignissim.</p>\r\n\r\n<p>Neque ornare aenean euismod elementum nisi quis. Sem integer vitae justo eget magna fermentum iaculis. Diam sit amet nisl suscipit. Rhoncus aenean vel elit scelerisque mauris pellentesque. Venenatis urna cursus eget nunc. Sem nulla pharetra diam sit amet nisl. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Commodo viverra maecenas accumsan.</p>\r\n"
+              format: wysiwyg
+          localgov_button:
+            -
+              uri: 'internal:/'
+              title: 'Link of the call out box'
+              options: {  }
+          localgov_colour_theme:
+            -
+              value: default
+          localgov_header_text:
+            -
+              value: 'Call out box'
+          localgov_heading_level:
+            -
+              value: h2
+          localgov_opens_in_a_new_window:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: bc4ec404-5e64-454d-9790-f0c0bb1f5d4f
+          bundle: localgov_page_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657281122
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: localgov_layout_twocol
+                  config:
+                    label: ''
+          localgov_width_of_section:
+            -
+              value: full-width-contained-content
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f8f1fa16-a36e-479b-b042-13e8e4e8f39f
           bundle: localgov_media_with_text
           default_langcode: en
         default:
@@ -401,24 +426,19 @@ default:
               value: true
           created:
             -
-              value: 1653388242
+              value: 1657281289
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: first
-                  parent_uuid: f248d89a-8b69-4203-a23b-07ca1c1c25f6
+                  parent_uuid: bc4ec404-5e64-454d-9790-f0c0bb1f5d4f
                   layout: ''
                   config: {  }
-                  parent_delta: 6
+                  parent_delta: 7
           localgov_heading_level:
             -
               value: h2
-          localgov_link:
-            -
-              uri: 'internal:#'
-              title: Link
-              options: {  }
           localgov_media_item:
             -
               entity: aa8b4b9c-f74d-4e30-bf51-afbc005a2470
@@ -433,7 +453,7 @@ default:
               value: false
           localgov_text:
             -
-              value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu non diam phasellus vestibulum lorem. Vitae elementum curabitur vitae nunc sed. Faucibus vitae aliquet nec ullamcorper sit amet. Amet venenatis urna cursus eget nunc scelerisque viverra. Proin fermentum leo vel orci porta non pulvinar neque laoreet.</p>\r\n\r\n<p>Neque ornare aenean euismod elementum nisi quis. Sem integer vitae justo eget magna fermentum iaculis. Diam sit amet nisl suscipit. Rhoncus aenean vel elit scelerisque mauris pellentesque. Venenatis urna cursus eget nunc. Sem nulla pharetra diam sit amet nisl. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Commodo viverra maecenas accumsan lacus vel.</p>\r\n"
+              value: "<p>Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Facilisis magna etiam tempor orci eu lobortis elementum. Nisi vitae suscipit tellus mauris. Posuere lorem ipsum dolor sit. Eu facilisis sed odio morbi quis commodo odio. Nunc sed blandit libero volutpat. Ut etiam sit amet nisl purus in. Fusce ut placerat orci nulla pellentesque dignissim.</p>\r\n\r\n<p>Neque ornare aenean euismod elementum nisi quis. Sem integer vitae justo eget magna fermentum iaculis. Diam sit amet nisl suscipit. Rhoncus aenean vel elit scelerisque mauris pellentesque. Venenatis urna cursus eget nunc. Sem nulla pharetra diam sit amet nisl. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Commodo viverra maecenas accumsan.</p>\r\n"
               format: wysiwyg
           localgov_title:
             -
@@ -443,7 +463,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 463d5994-4ef0-4b10-8b83-ac2f032ca5d4
+          uuid: f6578ee4-2244-49c2-9784-ff440bd50412
           bundle: localgov_media_with_text
           default_langcode: en
         default:
@@ -452,16 +472,16 @@ default:
               value: true
           created:
             -
-              value: 1653388275
+              value: 1657281310
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: second
-                  parent_uuid: f248d89a-8b69-4203-a23b-07ca1c1c25f6
+                  parent_uuid: bc4ec404-5e64-454d-9790-f0c0bb1f5d4f
                   layout: ''
                   config: {  }
-                  parent_delta: 6
+                  parent_delta: 7
           localgov_heading_level:
             -
               value: h2
@@ -479,7 +499,7 @@ default:
               value: false
           localgov_text:
             -
-              value: "<p>Neque ornare aenean euismod elementum nisi quis. Sem integer vitae justo eget magna fermentum iaculis. Diam sit amet nisl suscipit. Rhoncus aenean vel elit scelerisque mauris pellentesque. .</p>\r\n\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu non diam phasellus vestibulum lorem. Vitae elementum curabitur vitae nunc sed. Faucibus vitae aliquet nec ullamcorper sit amet. Amet venenatis urna cursus eget nunc scelerisque viverra. Proin fermentum leo vel orci porta non pulvinar neque laoreet.</p>\r\n"
+              value: "<p>Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Facilisis magna etiam tempor orci eu lobortis elementum. Nisi vitae suscipit tellus mauris. Posuere lorem ipsum dolor sit. Eu facilisis sed odio morbi quis commodo odio. Nunc sed blandit libero volutpat. Ut etiam sit amet nisl purus in. Fusce ut placerat orci nulla pellentesque dignissim.</p>\r\n\r\n<p>Neque ornare aenean euismod elementum nisi quis. Sem integer vitae justo eget magna fermentum iaculis. Diam sit amet nisl suscipit. Rhoncus aenean vel elit scelerisque mauris pellentesque. Venenatis urna cursus eget nunc. Sem nulla pharetra diam sit amet nisl. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Commodo viverra maecenas accumsan.</p>\r\n"
               format: wysiwyg
           localgov_title:
             -
@@ -489,7 +509,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 16dbeb66-c967-4c48-b3b6-75eaca14bc8c
+          uuid: c5c24c0a-e33b-48fe-8708-7654ab105be2
           bundle: localgov_page_section
           default_langcode: en
         default:
@@ -498,22 +518,25 @@ default:
               value: true
           created:
             -
-              value: 1653388331
+              value: 1657281371
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_twocol
+                  layout: localgov_layout_twocol
                   config:
                     label: ''
+          localgov_width_of_section:
+            -
+              value: contained-content
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: a5786d5a-cbdc-4098-923a-07134c03a655
+          uuid: 64fe0c13-0e68-4ef8-87c4-7886a89b00bc
           bundle: localgov_text
           default_langcode: en
         default:
@@ -522,44 +545,16 @@ default:
               value: true
           created:
             -
-              value: 1653388348
-          behavior_settings:
-            -
-              value:
-                layout_paragraphs:
-                  region: top
-                  parent_uuid: 16dbeb66-c967-4c48-b3b6-75eaca14bc8c
-                  layout: ''
-                  config: {  }
-                  parent_delta: 9
-          localgov_text:
-            -
-              value: "<h2>Two column section&nbsp;(text and image)</h2>\r\n"
-              format: wysiwyg
-    -
-      entity:
-        _meta:
-          version: '1.0'
-          entity_type: paragraph
-          uuid: 5cf08efb-3f9c-4c04-ac3f-fd3a2bb39af1
-          bundle: localgov_text
-          default_langcode: en
-        default:
-          status:
-            -
-              value: true
-          created:
-            -
-              value: 1653388371
+              value: 1657281389
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: first
-                  parent_uuid: 16dbeb66-c967-4c48-b3b6-75eaca14bc8c
+                  parent_uuid: c5c24c0a-e33b-48fe-8708-7654ab105be2
                   layout: ''
                   config: {  }
-                  parent_delta: 9
+                  parent_delta: 10
           localgov_text:
             -
               value: "<p>Diam vulputate ut pharetra sit amet aliquam id diam maecenas. Arcu non odio euismod lacinia at quis. Placerat vestibulum lectus mauris ultrices eros in. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Facilisis magna etiam tempor orci eu lobortis elementum. Nisi vitae suscipit tellus mauris. Posuere lorem ipsum dolor sit. Eu facilisis sed odio morbi quis commodo odio. Nunc sed blandit libero volutpat. Ut etiam sit amet nisl purus in. Fusce ut placerat orci nulla pellentesque dignissim.</p>\r\n\r\n<p>A lacus vestibulum sed arcu non odio. Vel elit scelerisque mauris pellentesque pulvinar. Urna porttitor rhoncus dolor purus non. Elit ut aliquam purus sit amet. Penatibus et magnis dis parturient montes nascetur ridiculus. Tristique sollicitudin nibh sit amet commodo nulla facilisi. Diam maecenas ultricies mi eget. Neque egestas congue quisque egestas diam in.</p>\r\n\r\n<p>Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Rhoncus urna neque viverra justo nec ultrices dui. Adipiscing tristique risus nec feugiat. Turpis nunc eget lorem dolor. Netus et malesuada fames ac. Et sollicitudin ac orci phasellus egestas. Mus mauris vitae ultricies leo integer. Id diam vel quam elementum pulvinar etiam non quam lacus. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Libero volutpat sed cras ornare arcu dui. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Mattis rhoncus urna neque viverra. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Ornare suspendisse sed nisi lacus sed viverra tellus in. Dignissim sodales ut eu sem integer vitae.</p>\r\n"
@@ -569,7 +564,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 362fc6df-565d-41c6-bae5-4c5dfce248d0
+          uuid: 0eacfef1-673a-4242-b05c-d4798c86f5c4
           bundle: localgov_image
           default_langcode: en
         default:
@@ -578,29 +573,29 @@ default:
               value: true
           created:
             -
-              value: 1653388385
+              value: 1657281401
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: second
-                  parent_uuid: 16dbeb66-c967-4c48-b3b6-75eaca14bc8c
+                  parent_uuid: c5c24c0a-e33b-48fe-8708-7654ab105be2
                   layout: ''
                   config: {  }
-                  parent_delta: 9
+                  parent_delta: 10
           localgov_caption:
             -
-              value: "<p>Image caption</p>\r\n"
+              value: "<p>Caption goes here</p>\r\n"
               format: wysiwyg
           localgov_image:
             -
-              entity: 816cf5b4-18b8-449e-b96c-c4e6ede3f51e
+              entity: 5bd95426-2307-47b8-8701-7e10421d7d2d
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 9bc44839-3be7-47cc-a7f7-fe25aa345f7e
+          uuid: 9827053f-1c55-4333-bb3d-c5216b61867b
           bundle: localgov_page_section
           default_langcode: en
         default:
@@ -609,55 +604,25 @@ default:
               value: true
           created:
             -
-              value: 1653388614
+              value: 1657281429
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_twocol
+                  layout: localgov_layout_onecol
                   config:
                     label: ''
-          revision_translation_affected:
+          localgov_width_of_section:
             -
-              value: true
+              value: contained-breakout
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 032c0170-0d3a-47d2-ac94-d816d78f2126
-          bundle: localgov_text
-          default_langcode: en
-        default:
-          status:
-            -
-              value: true
-          created:
-            -
-              value: 1653388627
-          behavior_settings:
-            -
-              value:
-                layout_paragraphs:
-                  region: top
-                  parent_uuid: 9bc44839-3be7-47cc-a7f7-fe25aa345f7e
-                  layout: ''
-                  config: {  }
-          revision_translation_affected:
-            -
-              value: true
-          localgov_text:
-            -
-              value: "<h2>Two column section with&nbsp;Featured teasers</h2>\r\n"
-              format: wysiwyg
-    -
-      entity:
-        _meta:
-          version: '1.0'
-          entity_type: paragraph
-          uuid: 45344cd2-9063-4e21-89cd-7a2daf0b9da0
+          uuid: 417d65e5-12f7-4880-b7f0-0fa474bde99e
           bundle: localgov_featured_teasers
           default_langcode: en
         default:
@@ -666,18 +631,16 @@ default:
               value: true
           created:
             -
-              value: 1653388650
+              value: 1657281445
           behavior_settings:
             -
               value:
                 layout_paragraphs:
-                  region: first
-                  parent_uuid: 9bc44839-3be7-47cc-a7f7-fe25aa345f7e
+                  region: content
+                  parent_uuid: 9827053f-1c55-4333-bb3d-c5216b61867b
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
+                  parent_delta: 13
           localgov_heading_level:
             -
               value: h2
@@ -687,7 +650,7 @@ default:
                 _meta:
                   version: '1.0'
                   entity_type: paragraph
-                  uuid: fe4808c2-47c9-4705-8cd9-e8c4adae2300
+                  uuid: 88d5be58-e39d-4a31-88a7-eb7d8664988d
                   bundle: localgov_featured_teaser
                   default_langcode: en
                 default:
@@ -696,7 +659,7 @@ default:
                       value: true
                   created:
                     -
-                      value: 1653388650
+                      value: 1657281445
                   behavior_settings:
                     -
                       value: {  }
@@ -711,8 +674,8 @@ default:
                       entity: 28af4f59-1b6b-4efb-994b-fa400009ce93
                   localgov_link:
                     -
-                      uri: 'https://waronwant.org'
-                      title: 'Link goes here'
+                      uri: 'internal:/'
+                      title: Link
                       options: {  }
                   localgov_text:
                     -
@@ -726,7 +689,7 @@ default:
                 _meta:
                   version: '1.0'
                   entity_type: paragraph
-                  uuid: e4721583-c2ee-4841-836f-edc9a1f42895
+                  uuid: 27c4a1fa-5ac3-4e76-a4a1-49118ab22133
                   bundle: localgov_featured_teaser
                   default_langcode: en
                 default:
@@ -735,7 +698,46 @@ default:
                       value: true
                   created:
                     -
-                      value: 1653388696
+                      value: 1657281481
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  localgov_heading_level:
+                    -
+                      value: h3
+                  localgov_image:
+                    -
+                      entity: 7599711d-341b-41ff-ae1e-89654f70cbd1
+                  localgov_link:
+                    -
+                      uri: 'internal:/'
+                      title: link
+                      options: {  }
+                  localgov_text:
+                    -
+                      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at elit vestibulum, tincidunt tortor vitae, egestas est. Etiam condimentum facilisis dolor, sit amet aliquet velit varius vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at elit vestibulum, tincidunt tortor vitae, egestas est. Etiam condimentum facilisis dolor, sit amet aliquet velit varius vitae.</p>\r\n"
+                      format: wysiwyg
+                  localgov_title:
+                    -
+                      value: 'Teaser number 2'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 63d45c9c-84b5-44ec-8a00-65efeb36e515
+                  bundle: localgov_featured_teaser
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1657281509
                   behavior_settings:
                     -
                       value: {  }
@@ -750,86 +752,25 @@ default:
                       entity: 83a2e6c9-5ec4-43e0-a861-1e323545350b
                   localgov_link:
                     -
-                      uri: 'https://waronwant.org'
-                      title: 'Link text goes here'
+                      uri: 'internal:/'
+                      title: link
                       options: {  }
                   localgov_text:
                     -
-                      value: "<p>Aenean at elit vestibulum, tincidunt tortor vitae, egestas est.&nbsp;</p>\r\n"
+                      value: "<p>&nbsp;Aenean at elit vestibulum, tincidunt tortor vitae, egestas est.</p>\r\n"
                       format: wysiwyg
                   localgov_title:
                     -
-                      value: 'New teaser title'
+                      value: 'A third teaser'
+          localgov_title:
+            -
+              value: 'Some teasers'
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 3016ef54-b450-44e2-96b8-93acc0de4dac
-          bundle: localgov_featured_teasers
-          default_langcode: en
-        default:
-          status:
-            -
-              value: true
-          created:
-            -
-              value: 1653388763
-          behavior_settings:
-            -
-              value:
-                layout_paragraphs:
-                  region: second
-                  parent_uuid: 9bc44839-3be7-47cc-a7f7-fe25aa345f7e
-                  layout: ''
-                  config: {  }
-          revision_translation_affected:
-            -
-              value: true
-          localgov_heading_level:
-            -
-              value: h2
-          localgov_paragraphs:
-            -
-              entity:
-                _meta:
-                  version: '1.0'
-                  entity_type: paragraph
-                  uuid: a0388cc0-ad6b-4fc4-be52-62ccbdc5034e
-                  bundle: localgov_featured_teaser
-                  default_langcode: en
-                default:
-                  status:
-                    -
-                      value: true
-                  created:
-                    -
-                      value: 1653388763
-                  behavior_settings:
-                    -
-                      value: {  }
-                  revision_translation_affected:
-                    -
-                      value: true
-                  localgov_heading_level:
-                    -
-                      value: h3
-                  localgov_image:
-                    -
-                      entity: 7599711d-341b-41ff-ae1e-89654f70cbd1
-                  localgov_text:
-                    -
-                      value: "<p>Eros in cursus turpis massa tincidunt dui ut. Vel fringilla est ullamcorper eget nulla facilisi. Gravida arcu ac tortor dignissim convallis aenean et. Morbi leo urna molestie at elementum eu. Ut enim blandit volutpat maecenas volutpat. Ipsum consequat nisl vel pretium lectus. Pellentesque sit amet porttitor eget. Sit amet tellus cras adipiscing enim eu. Posuere urna nec tincidunt praesent semper feugiat.</p>\r\n"
-                      format: wysiwyg
-                  localgov_title:
-                    -
-                      value: 'Teaser 3'
-    -
-      entity:
-        _meta:
-          version: '1.0'
-          entity_type: paragraph
-          uuid: 37347c0e-307f-48bb-b1b4-650e1725d9df
+          uuid: 3eb4dbe9-f30c-481c-9a1c-db4717f59c6b
           bundle: localgov_page_section
           default_langcode: en
         default:
@@ -838,55 +779,25 @@ default:
               value: true
           created:
             -
-              value: 1653388794
+              value: 1657281557
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_threecol_33_34_33
+                  layout: localgov_layout_threecol_33_34_33
                   config:
                     label: ''
-          revision_translation_affected:
+          localgov_width_of_section:
             -
-              value: true
+              value: contained-content
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: e6e84640-dc3e-4bcd-b36c-fdc908d1ffeb
-          bundle: localgov_text
-          default_langcode: en
-        default:
-          status:
-            -
-              value: true
-          created:
-            -
-              value: 1653388810
-          behavior_settings:
-            -
-              value:
-                layout_paragraphs:
-                  region: top
-                  parent_uuid: 37347c0e-307f-48bb-b1b4-650e1725d9df
-                  layout: ''
-                  config: {  }
-          revision_translation_affected:
-            -
-              value: true
-          localgov_text:
-            -
-              value: "<h2>Three column section (IA blocks)</h2>\r\n"
-              format: wysiwyg
-    -
-      entity:
-        _meta:
-          version: '1.0'
-          entity_type: paragraph
-          uuid: 3c9220ee-22c5-416d-ba08-87b4f382f20e
+          uuid: 10e34e94-ecc1-4020-917e-69b8e4592535
           bundle: localgov_ia_block
           default_langcode: en
         default:
@@ -895,39 +806,37 @@ default:
               value: true
           created:
             -
-              value: 1653388850
+              value: 1657281573
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: first
-                  parent_uuid: 37347c0e-307f-48bb-b1b4-650e1725d9df
+                  parent_uuid: 3eb4dbe9-f30c-481c-9a1c-db4717f59c6b
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
+                  parent_delta: 15
           localgov_ia_block_link:
             -
-              uri: 'internal:/node/1'
+              uri: 'internal:/'
               title: ''
               options: {  }
           localgov_ia_block_links:
             -
-              uri: 'internal:/node/1'
+              uri: 'internal:/'
               title: 'Link 1'
               options: {  }
             -
-              uri: 'internal:/node/1'
+              uri: 'internal:/'
               title: 'Link 2'
               options: {  }
             -
-              uri: 'internal:/node/1'
+              uri: 'internal:/'
               title: 'Link 3'
               options: {  }
           localgov_ia_block_promoted:
             -
-              value: true
+              value: false
           localgov_ia_block_title:
             -
               value: 'IA block'
@@ -936,7 +845,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: f15b6d95-5f13-4c73-b7e2-802d398cec76
+          uuid: e88b0e2d-3487-4b4f-8ba3-dc65ea855370
           bundle: localgov_ia_block
           default_langcode: en
         default:
@@ -945,39 +854,32 @@ default:
               value: true
           created:
             -
-              value: 1653388934
+              value: 1657281620
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: second
-                  parent_uuid: 37347c0e-307f-48bb-b1b4-650e1725d9df
+                  parent_uuid: 3eb4dbe9-f30c-481c-9a1c-db4717f59c6b
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
-          localgov_ia_block_link:
-            -
-              uri: 'internal:/node/1'
-              title: ''
-              options: {  }
+                  parent_delta: 15
           localgov_ia_block_links:
             -
-              uri: 'internal:/node/1'
+              uri: 'internal:/'
               title: 'Menu item'
               options: {  }
             -
-              uri: 'internal:/node/1'
-              title: 'Menu item'
+              uri: 'internal:/'
+              title: 'Menu item 2'
               options: {  }
             -
-              uri: 'internal:/node/1'
-              title: 'Menu item'
+              uri: 'internal:/'
+              title: 'Menu item 3 '
               options: {  }
           localgov_ia_block_promoted:
             -
-              value: false
+              value: true
           localgov_ia_block_title:
             -
               value: 'IA block 2'
@@ -986,7 +888,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: d7bafbdf-d51e-40fd-82b3-5bdc598462d8
+          uuid: fc1320db-6984-4f97-b52b-660f265d9341
           bundle: localgov_ia_block
           default_langcode: en
         default:
@@ -995,35 +897,28 @@ default:
               value: true
           created:
             -
-              value: 1653389014
+              value: 1657281679
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: third
-                  parent_uuid: 37347c0e-307f-48bb-b1b4-650e1725d9df
+                  parent_uuid: 3eb4dbe9-f30c-481c-9a1c-db4717f59c6b
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
-          localgov_ia_block_link:
-            -
-              uri: 'internal:/node/1'
-              title: ''
-              options: {  }
+                  parent_delta: 15
           localgov_ia_block_links:
             -
-              uri: 'internal:/node/1'
-              title: 'item uno'
+              uri: 'internal:/'
+              title: 'Item 1'
               options: {  }
             -
-              uri: 'internal:/node/1'
-              title: 'item due'
+              uri: 'internal:/'
+              title: 'Item 2'
               options: {  }
             -
-              uri: 'internal:/node/1'
-              title: 'item tre'
+              uri: 'internal:/'
+              title: 'Item 3'
               options: {  }
           localgov_ia_block_promoted:
             -
@@ -1036,7 +931,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 6e65d3b8-0b59-4ad9-a490-b90055917293
+          uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
           bundle: localgov_page_section
           default_langcode: en
         default:
@@ -1045,25 +940,28 @@ default:
               value: true
           created:
             -
-              value: 1653389083
+              value: 1657291484
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_threecol_33_34_33
+                  layout: localgov_layout_threecol_33_34_33
                   config:
                     label: ''
           revision_translation_affected:
             -
               value: true
+          localgov_width_of_section:
+            -
+              value: contained-content
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: e8608ab6-15f0-439d-8056-bbba19ee062c
+          uuid: d71966b2-b84a-497d-9336-d6448dbac6da
           bundle: localgov_text
           default_langcode: en
         default:
@@ -1072,43 +970,13 @@ default:
               value: true
           created:
             -
-              value: 1653389092
-          behavior_settings:
-            -
-              value:
-                layout_paragraphs:
-                  region: top
-                  parent_uuid: 6e65d3b8-0b59-4ad9-a490-b90055917293
-                  layout: ''
-                  config: {  }
-          revision_translation_affected:
-            -
-              value: true
-          localgov_text:
-            -
-              value: "<h2>Three column section (text, image, quote, link, call out box)</h2>\r\n"
-              format: wysiwyg
-    -
-      entity:
-        _meta:
-          version: '1.0'
-          entity_type: paragraph
-          uuid: c2bc3134-414d-4743-aec5-08a5241afafa
-          bundle: localgov_text
-          default_langcode: en
-        default:
-          status:
-            -
-              value: true
-          created:
-            -
-              value: 1653389118
+              value: 1657291508
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: first
-                  parent_uuid: 6e65d3b8-0b59-4ad9-a490-b90055917293
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
           revision_translation_affected:
@@ -1116,14 +984,14 @@ default:
               value: true
           localgov_text:
             -
-              value: "<p>Eros in cursus turpis massa tincidunt dui ut. Vel fringilla est ullamcorper eget nulla facilisi. Gravida arcu ac tortor dignissim convallis aenean et. Morbi leo urna molestie at elementum eu. Ut enim blandit volutpat maecenas volutpat. Ipsum consequat nisl vel pretium lectus. Pellentesque sit amet porttitor eget. Sit amet tellus cras adipiscing enim eu.</p>\r\n"
+              value: "<p>Eros in cursus turpis massa tincidunt dui ut. Vel fringilla est ullamcorper eget nulla facilisi. Gravida arcu ac tortor dignissim convallis aenean et. Morbi leo urna molestie at elementum eu. Ut enim blandit volutpat maecenas volutpat. Ipsum consequat nisl vel pretium lectus.</p>\r\n\r\n<p class=\"callout callout-primary\">Pellentesque sit amet porttitor eget. Sit amet tellus cras adipiscing enim eu.</p>\r\n"
               format: wysiwyg
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 95988d86-c814-4b26-9012-24b1b33e718f
+          uuid: 5e69fafb-6c2a-4f7c-bd3c-e936ac0596d9
           bundle: localgov_image
           default_langcode: en
         default:
@@ -1132,13 +1000,13 @@ default:
               value: true
           created:
             -
-              value: 1653389132
+              value: 1657291545
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: first
-                  parent_uuid: 6e65d3b8-0b59-4ad9-a490-b90055917293
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
           revision_translation_affected:
@@ -1156,7 +1024,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 4648ec4e-c20c-43a0-b291-57ee8c4702f3
+          uuid: 0980c099-a80f-472b-9aac-c7d876e3fff6
           bundle: localgov_text
           default_langcode: en
         default:
@@ -1165,13 +1033,13 @@ default:
               value: true
           created:
             -
-              value: 1653389194
+              value: 1657291559
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: first
-                  parent_uuid: 6e65d3b8-0b59-4ad9-a490-b90055917293
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
           revision_translation_affected:
@@ -1186,7 +1054,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 22741275-bad8-4648-b9e9-68bb64854e7d
+          uuid: 42f0d860-e69f-42a9-a3ac-2f20fa8a3b33
           bundle: localgov_text
           default_langcode: en
         default:
@@ -1195,13 +1063,13 @@ default:
               value: true
           created:
             -
-              value: 1653389213
+              value: 1657291567
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: second
-                  parent_uuid: 6e65d3b8-0b59-4ad9-a490-b90055917293
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
           revision_translation_affected:
@@ -1209,14 +1077,61 @@ default:
               value: true
           localgov_text:
             -
-              value: "<p>A lacus vestibulum sed arcu non odio. Vel elit scelerisque mauris pellentesque pulvinar. Urna porttitor rhoncus dolor purus non. Elit ut aliquam purus sit amet. Penatibus et magnis dis parturient montes nascetur ridiculus. Tristique sollicitudin nibh sit amet commodo nulla facilisi. Diam maecenas ultricies mi eget. Neque egestas congue quisque egestas diam in. Vitae congue eu consequat ac felis donec et odio pellentesque.</p>\r\n\r\n<h2>Heading 2</h2>\r\n\r\n<p>Tortor condimentum lacinia quis vel eros donec ac. Bibendum enim facilisis gravida neque. Bibendum at varius vel pharetra vel. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Dolor sit amet consectetur adipiscing elit. In fermentum posuere urna nec tincidunt praesent. Facilisis volutpat est velit egestas dui id. Lacus sed viverra tellus in hac habitasse. Mauris ultrices eros in cursus turpis massa tincidunt dui ut.</p>\r\n\r\n<p>Nisi vitae suscipit tellus mauris. Posuere lorem ipsum dolor sit. Eu facilisis sed odio morbi quis commodo odio. Nunc sed blandit libero volutpat. Ut etiam sit amet nisl purus in. Fusce ut placerat orci nulla pellentesque dignissim.</p>\r\n"
+              value: "<p>A lacus vestibulum sed arcu non odio. Vel elit scelerisque mauris pellentesque pulvinar. Urna porttitor rhoncus dolor purus non. Elit ut aliquam purus sit amet. Penatibus et magnis dis parturient montes nascetur ridiculus. Tristique sollicitudin nibh sit amet commodo nulla facilisi. Diam maecenas ultricies mi eget. Neque egestas congue quisque egestas diam in. Vitae congue eu consequat ac felis donec et odio pellentesque.</p>\r\n\r\n<h3>Heading 3</h3>\r\n\r\n<p>Tortor condimentum lacinia quis vel eros donec ac. Bibendum enim facilisis gravida neque. Bibendum at varius vel pharetra vel. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Dolor sit amet consectetur adipiscing elit. In fermentum posuere urna nec tincidunt praesent. Facilisis volutpat est velit egestas dui id. Lacus sed viverra tellus in hac habitasse. Mauris ultrices eros in cursus turpis massa tincidunt dui ut.</p>\r\n\r\n<p>Nisi vitae suscipit tellus mauris. Posuere lorem ipsum dolor sit. Eu facilisis sed odio morbi quis commodo odio. Nunc sed blandit libero volutpat. Ut etiam sit amet nisl purus in. Fusce ut placerat orci nulla pellentesque dignissim.</p>\r\n"
               format: wysiwyg
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: cb9dda9c-67d1-46c6-9c8e-d07956eda3a2
+          uuid: 60e7b032-c339-4ad5-9e4b-a7e3bf0d10f5
+          bundle: localgov_call_out_box
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291669
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: second
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_body_text:
+            -
+              value: "<p>Posuere urna nec tincidunt praesent semper feugiat. Ut aliquam purus sit amet luctus venenatis. Aenean et tortor at risus viverra adipiscing at. Scelerisque purus semper eget duis at tellus at urna condimentum.&nbsp;</p>\r\n"
+              format: wysiwyg
+          localgov_button:
+            -
+              uri: 'internal:/'
+              title: 'Call out box link'
+              options: {  }
+          localgov_colour_theme:
+            -
+              value: default
+          localgov_header_text:
+            -
+              value: 'Call out box without background'
+          localgov_heading_level:
+            -
+              value: h2
+          localgov_opens_in_a_new_window:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 278c6147-cb8c-4169-9d43-a14d2add2bca
           bundle: localgov_quote
           default_langcode: en
         default:
@@ -1225,13 +1140,13 @@ default:
               value: true
           created:
             -
-              value: 1653389241
+              value: 1657291592
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: third
-                  parent_uuid: 6e65d3b8-0b59-4ad9-a490-b90055917293
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
           revision_translation_affected:
@@ -1242,13 +1157,13 @@ default:
               value: 'Noam Chomsky'
           localgov_text_plain:
             -
-              value: 'Education must provide the opportunities for self-fulfillment; it can at best provide a rich and challenging environment for the individual to explore, in his own way.'
+              value: "Education must provide the opportunities for self-fulfillment; it can at best provide a rich and challenging environment for the individual to explore, in his own way.\r\n"
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: ea7dc5b7-f8b7-4751-bb0e-22060e9a3dd2
+          uuid: 6081cd03-209c-4e40-bd11-4ce3644117a1
           bundle: localgov_link
           default_langcode: en
         default:
@@ -1257,13 +1172,13 @@ default:
               value: true
           created:
             -
-              value: 1653389264
+              value: 1657291610
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: third
-                  parent_uuid: 6e65d3b8-0b59-4ad9-a490-b90055917293
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
           revision_translation_affected:
@@ -1274,13 +1189,13 @@ default:
               value: 'Link button'
           localgov_url:
             -
-              value: 'https://waronwant.org'
+              value: /
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: a9c6c2b4-40d2-429a-950a-40221495c4ee
+          uuid: 02a20d68-92d0-458e-aa41-a3b3a0a5e544
           bundle: localgov_call_out_box
           default_langcode: en
         default:
@@ -1289,13 +1204,13 @@ default:
               value: true
           created:
             -
-              value: 1653389282
+              value: 1657291625
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: third
-                  parent_uuid: 6e65d3b8-0b59-4ad9-a490-b90055917293
+                  parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
           revision_translation_affected:
@@ -1310,8 +1225,8 @@ default:
               format: wysiwyg
           localgov_button:
             -
-              uri: 'internal:/node/1'
-              title: 'Link to call out box'
+              uri: 'internal:/'
+              title: 'Call out box link'
               options: {  }
           localgov_colour_theme:
             -
@@ -1321,7 +1236,7 @@ default:
               value: 'Call out box'
           localgov_heading_level:
             -
-              value: h3
+              value: h2
           localgov_opens_in_a_new_window:
             -
               value: false
@@ -1330,7 +1245,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 8976f397-5890-4ede-995f-576fffe32afa
+          uuid: 71047741-0031-4db4-8b04-7a80560ce90a
           bundle: localgov_page_section
           default_langcode: en
         default:
@@ -1339,55 +1254,28 @@ default:
               value: true
           created:
             -
-              value: 1653389345
+              value: 1657291702
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: ''
                   parent_uuid: ''
-                  layout: layout_onecol
+                  layout: localgov_layout_onecol
                   config:
                     label: ''
           revision_translation_affected:
             -
               value: true
+          localgov_width_of_section:
+            -
+              value: contained-content
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: cc7f9886-6a1e-4adf-af48-a51c5ad66b9a
-          bundle: localgov_text
-          default_langcode: en
-        default:
-          status:
-            -
-              value: true
-          created:
-            -
-              value: 1653389356
-          behavior_settings:
-            -
-              value:
-                layout_paragraphs:
-                  region: content
-                  parent_uuid: 8976f397-5890-4ede-995f-576fffe32afa
-                  layout: ''
-                  config: {  }
-          revision_translation_affected:
-            -
-              value: true
-          localgov_text:
-            -
-              value: "<h2>Table</h2>\r\n"
-              format: wysiwyg
-    -
-      entity:
-        _meta:
-          version: '1.0'
-          entity_type: paragraph
-          uuid: 290f66f0-dfd4-4095-a7df-a0ee68610b2e
+          uuid: cc509db9-7d02-4eda-91cb-fac66338e75d
           bundle: localgov_table
           default_langcode: en
         default:
@@ -1396,13 +1284,13 @@ default:
               value: true
           created:
             -
-              value: 1653389378
+              value: 1657291719
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: content
-                  parent_uuid: 8976f397-5890-4ede-995f-576fffe32afa
+                  parent_uuid: 71047741-0031-4db4-8b04-7a80560ce90a
                   layout: ''
                   config: {  }
           revision_translation_affected:
@@ -1412,42 +1300,77 @@ default:
             -
               value:
                 0:
-                  - '1'
-                  - '2'
-                  - '3'
-                  - '4'
+                  - 'Header 1'
+                  - 'Header 2'
+                  - 'Header 3'
+                  - 'Header 4'
+                  - 'Header 5'
                 1:
-                  - a
-                  - item
-                  - item
-                  - item
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
                 2:
-                  - b
-                  - item
-                  - item
-                  - item
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
                 3:
-                  - c
-                  - item
-                  - item
-                  - item
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
                 4:
-                  - d
-                  - item
-                  - item
-                  - item
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
+                  - 'Vivamus magna justo'
                 caption: 'Sample table'
               format: wysiwyg
               caption: 'Sample table'
           localgov_table_theme:
             -
-              value: minimal
+              value: headed
     -
       entity:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 18d18a62-6003-4e80-b7bf-855393ff447d
+          uuid: 2df69bb9-587d-4ed7-905b-68e17dd9862f
+          bundle: localgov_page_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657291803
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: localgov_layout_onecol
+                  config:
+                    label: ''
+          revision_translation_affected:
+            -
+              value: true
+          localgov_width_of_section:
+            -
+              value: contained-breakout
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b7d749de-374b-4d3e-8fa1-f6233c4539ce
           bundle: localgov_video
           default_langcode: en
         default:
@@ -1456,13 +1379,13 @@ default:
               value: true
           created:
             -
-              value: 1653389433
+              value: 1657291816
           behavior_settings:
             -
               value:
                 layout_paragraphs:
                   region: content
-                  parent_uuid: 8976f397-5890-4ede-995f-576fffe32afa
+                  parent_uuid: 2df69bb9-587d-4ed7-905b-68e17dd9862f
                   layout: ''
                   config: {  }
           revision_translation_affected:
