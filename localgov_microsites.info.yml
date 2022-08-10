@@ -57,4 +57,5 @@ install:
 
 themes:
   - localgov_microsites_base
-  - gin
+  - claro
+  - lgd_claro
