@@ -54,6 +54,7 @@ install:
   - localgov_microsites_group:localgov_microsites_group
   - localgov_microsites_group:localgov_microsites_news
   - localgov_microsites_group:localgov_microsites_permissions
+  - localgov_paragraphs:localgov_paragraphs_views
 
 themes:
   - localgov_microsites_base
