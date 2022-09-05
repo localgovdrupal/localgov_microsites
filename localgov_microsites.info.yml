@@ -32,6 +32,7 @@ install:
   - drupal:toolbar
   - drupal:views
   - drupal:views_ui
+  
   # Contrib
   - admin_toolbar:admin_toolbar
   - admin_toolbar:admin_toolbar_links_access_filter
@@ -45,6 +46,7 @@ install:
   - group:group
   - group_permissions:group_permissions
   - twig_tweak:twig_tweak
+  
   # LocalGov Drupal
   - localgov_core:localgov_media
   - localgov_microsites:localgov_microsites_media
@@ -54,6 +56,7 @@ install:
   - localgov_microsites_group:localgov_microsites_group
   - localgov_microsites_group:localgov_microsites_news
   - localgov_microsites_group:localgov_microsites_permissions
+  - localgov_paragraphs:localgov_paragraphs_views
 
 themes:
   - localgov_microsites_base
