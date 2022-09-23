@@ -21,6 +21,7 @@
         "drupal/gin": "^3.0@beta",
         "drupal/gin_login": "^1.0@RC",
         "drupal/gin_toolbar": "^1.0@beta",
+        "localgovdrupal/localgov_blogs": "1.x-dev",
         "localgovdrupal/localgov_core": "^2.1.0",
         "localgovdrupal/localgov_directories": "^2.2",
         "localgovdrupal/localgov_events": "^2.0",
