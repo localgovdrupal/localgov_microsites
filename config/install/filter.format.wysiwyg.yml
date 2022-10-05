@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.freestyle
     - core.entity_view_mode.media.medium_8_7
     - core.entity_view_mode.media.responsive_3x2
     - core.entity_view_mode.media.scale_crop_7_3_large
@@ -19,25 +20,25 @@ filters:
     provider: editor
     status: true
     weight: -44
-    settings: {}
+    settings: {  }
   filter_autop:
     id: filter_autop
     provider: filter
     status: true
     weight: -43
-    settings: {}
+    settings: {  }
   filter_html_image_secure:
     id: filter_html_image_secure
     provider: filter
     status: false
     weight: -40
-    settings: {}
+    settings: {  }
   filter_align:
     id: filter_align
     provider: filter
     status: true
     weight: -49
-    settings: {}
+    settings: {  }
   filter_url:
     id: filter_url
     provider: filter
@@ -50,7 +51,7 @@ filters:
     provider: filter
     status: false
     weight: -42
-    settings: {}
+    settings: {  }
   filter_html:
     id: filter_html
     provider: filter
@@ -65,13 +66,13 @@ filters:
     provider: filter
     status: true
     weight: -48
-    settings: {}
+    settings: {  }
   filter_html_escape:
     id: filter_html_escape
     provider: filter
     status: false
     weight: -45
-    settings: {}
+    settings: {  }
   linkit:
     id: linkit
     provider: linkit
@@ -86,13 +87,14 @@ filters:
     weight: -46
     settings:
       default_view_mode: responsive_3x2
-      allowed_media_types:
-        document: document
-        image: image
-        remote_video: remote_video
       allowed_view_modes:
         default: default
+        freestyle: freestyle
         medium_8_7: medium_8_7
         responsive_3x2: responsive_3x2
         scale_crop_7_3_large: scale_crop_7_3_large
         square: square
+      allowed_media_types:
+        document: document
+        image: image
+        remote_video: remote_video
