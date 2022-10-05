@@ -45,6 +45,8 @@ install:
   - domain_path:domain_path
   - group:group
   - group_permissions:group_permissions
+  - metatag:metatag
+  - metatag:metatag_open_graph
   - twig_tweak:twig_tweak
 
   # LocalGov Drupal
