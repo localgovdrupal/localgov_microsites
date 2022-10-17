@@ -65,4 +65,4 @@ install:
 themes:
   - localgov_microsites_base
   - claro
-  - lgd_claro
+  - localgov_claro
