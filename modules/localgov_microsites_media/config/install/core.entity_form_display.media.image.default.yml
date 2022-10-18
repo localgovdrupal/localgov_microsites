@@ -32,6 +32,7 @@ content:
         - '7_3'
         - '8_7'
         - square
+        - freestyle
       progress_indicator: throbber
       crop_types_required: {  }
       show_crop_area: false
