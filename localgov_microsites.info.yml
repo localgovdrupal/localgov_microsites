@@ -47,6 +47,7 @@ install:
   - group_permissions:group_permissions
   - metatag:metatag
   - metatag:metatag_open_graph
+  - metatag:metatag_twitter_cards
   - twig_tweak:twig_tweak
 
   # LocalGov Drupal
