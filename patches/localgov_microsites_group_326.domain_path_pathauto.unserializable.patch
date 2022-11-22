@@ -1,0 +1,138 @@
+commit 4da5a6b28313c76f6fab82f8f6388a019394ff5c
+Author: ekes <ekes@iskra.net>
+Date:   Tue Nov 22 11:57:23 2022 +0100
+
+    Turn ::validate and ::submit callback to static to prevent including unserializable services.
+    
+    https://github.com/localgovdrupal/localgov_microsites_group/issues/326
+
+diff --git a/modules/domain_path_pathauto/src/DomainPathautoHelper.php b/modules/domain_path_pathauto/src/DomainPathautoHelper.php
+index 02fadde..4c2abab 100644
+--- a/modules/domain_path_pathauto/src/DomainPathautoHelper.php
++++ b/modules/domain_path_pathauto/src/DomainPathautoHelper.php
+@@ -107,18 +107,18 @@ class DomainPathautoHelper {
+         ],
+       ]);
+     }
+-    $form['#validate'][] = [$this, 'validateAlteredForm'];
++    $form['#validate'][] = [self::class, 'validateAlteredForm'];
+     if (!empty($form['actions'])) {
+       if (array_key_exists('submit', $form['actions'])) {
+         $form['actions']['submit']['#submit'][] = [
+-          $this,
++          self::class,
+           'submitAlteredEntityForm',
+         ];
+       }
+     }
+     else {
+       // If no actions we just tack it on to the form submit handlers.
+-      $form['#submit'][] = [$this, 'submitAlteredEntityForm'];
++      $form['#submit'][] = [self::class, 'submitAlteredEntityForm'];
+     }
+   }
+ 
+@@ -133,16 +133,16 @@ class DomainPathautoHelper {
+    * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+    */
+-  public function validateAlteredForm(array &$form, FormStateInterface $form_state) {
++  public static function validateAlteredForm(array &$form, FormStateInterface $form_state) {
+     // Set up variables.
+     $entity = $form_state->getFormObject()->getEntity();
+     $path_values = $form_state->getValue('path');
+-    $domain_path_values = ($this->configFactory->get('domain_path.settings')->get('hide_path_alias_ui')) ? $form_state->getValue('domain_path') : $path_values[0]['domain_path'];
++    $domain_path_values = (\Drupal::configFactory()->get('domain_path.settings')->get('hide_path_alias_ui')) ? $form_state->getValue('domain_path') : $path_values[0]['domain_path'];
+     $alias = $path_values[0]['alias'] ?? NULL;
+     // Check domain access settings if they are on the form.
+     $domain_access = [];
+     if (!empty($form['field_domain_access']) && !empty($form_state->getValue('field_domain_access'))) {
+-      $domain_access = $this->domainPathHelper->processDomainAccessField($form_state->getValue('field_domain_access'));
++      $domain_access = \Drupal::service('domain_path.helper')->processDomainAccessField($form_state->getValue('field_domain_access'));
+     }
+     $build_info = $form_state->getBuildInfo();
+     $domain_access_all = empty($form['field_domain_all_affiliates']) || $form_state->getValue('field_domain_all_affiliates')['value'];
+@@ -159,7 +159,7 @@ class DomainPathautoHelper {
+       if (!$domain_path_data['pathauto']) {
+         $path = $domain_path_data['path'];
+         if (!empty($path) && $path === $alias) {
+-          $form_state->setError(NestedArray::getValue($form, array_merge($build_info['element_keys'], [$domain_id])), $this->t('Domain path "%path" matches the default path alias. You may leave the element blank.', ['%path' => $path]));
++          $form_state->setError(NestedArray::getValue($form, array_merge($build_info['element_keys'], [$domain_id])), \t('Domain path "%path" matches the default path alias. You may leave the element blank.', ['%path' => $path]));
+         }
+         elseif (!empty($path)) {
+           // Trim slashes and whitespace from end of path value.
+@@ -167,11 +167,11 @@ class DomainPathautoHelper {
+ 
+           // Check that the paths start with a slash.
+           if ($path_value && $path_value[0] !== '/') {
+-            $form_state->setError(NestedArray::getValue($form, array_merge($build_info['element_keys'], [$domain_id, 'path'])), $this->t('Domain path "%path" needs to start with a slash.', ['%path' => $path]));
++            $form_state->setError(NestedArray::getValue($form, array_merge($build_info['element_keys'], [$domain_id, 'path'])), \t('Domain path "%path" needs to start with a slash.', ['%path' => $path]));
+           }
+ 
+           // Check for duplicates.
+-          $entity_query = $this->entityTypeManager->getStorage('domain_path')
++          $entity_query = \Drupal::entityTypeManager()->getStorage('domain_path')
+             ->getQuery();
+           $entity_query->condition('domain_id', $domain_id)
+             ->condition('alias', $path_value);
+@@ -180,7 +180,7 @@ class DomainPathautoHelper {
+           }
+           $result = $entity_query->execute();
+           if ($result) {
+-            $form_state->setError(NestedArray::getValue($form, array_merge($build_info['element_keys'], [$domain_id, 'path'])), $this->t('Domain path %path matches an existing domain path alias', ['%path' => $path_value]));
++            $form_state->setError(NestedArray::getValue($form, array_merge($build_info['element_keys'], [$domain_id, 'path'])), \t('Domain path %path matches an existing domain path alias', ['%path' => $path_value]));
+           }
+         }
+         if (isset($path_value)) {
+@@ -202,9 +202,9 @@ class DomainPathautoHelper {
+    * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException|\Drupal\Core\Entity\EntityStorageException
+    */
+-  public function submitAlteredEntityForm(array $form, FormStateInterface $form_state) {
++  public static function submitAlteredEntityForm(array $form, FormStateInterface $form_state) {
+     $path_values = $form_state->getValue('path');
+-    $domain_path_values = ($this->configFactory->get('domain_path.settings')->get('hide_path_alias_ui')) ? $form_state->getValue('domain_path') : $path_values[0]['domain_path'];
++    $domain_path_values = (\Drupal::configFactory()->get('domain_path.settings')->get('hide_path_alias_ui')) ? $form_state->getValue('domain_path') : $path_values[0]['domain_path'];
+     $entity = $form_state->getFormObject()->getEntity();
+     $entity_system_path = '/' . $entity->toUrl()->getInternalPath();
+     $properties = [
+@@ -215,7 +215,7 @@ class DomainPathautoHelper {
+     // Check domain access settings if they are on the form.
+     $domain_access = [];
+     if (!empty($form['field_domain_access']) && !empty($form_state->getValue('field_domain_access'))) {
+-      $domain_access = $this->domainPathHelper->processDomainAccessField($form_state->getValue('field_domain_access'));
++      $domain_access = \Drupal::service('domain_path.helper')->processDomainAccessField($form_state->getValue('field_domain_access'));
+     }
+     // If not set to delete, then save changes.
+     if (empty($domain_path_values['domain_path_delete'])) {
+@@ -225,17 +225,17 @@ class DomainPathautoHelper {
+         $alias = trim($domain_path_data['path']);
+         if ($domain_path_data['pathauto']) {
+           // Generate alias using pathauto.
+-          $alias = $this->domainPathautoGenerator->createEntityAlias($entity, 'return', $domain_id);
++          $alias = \Drupal::service('domain_path_pathauto.generator')->createEntityAlias($entity, 'return', $domain_id);
+           // Remember pathauto default enabled setting.
+-          $this->domainPathautoGenerator->setDomainPathPathautoState($entity, $domain_id, TRUE);
++          \Drupal::service('domain_path_pathauto.generator')->setDomainPathPathautoState($entity, $domain_id, TRUE);
+         }
+         else {
+           // Delete pathauto default enabled setting.
+-          $this->domainPathautoGenerator->deleteDomainPathPathautoState($entity, $domain_id);
++          \Drupal::service('domain_path_pathauto.generator')->deleteDomainPathPathautoState($entity, $domain_id);
+         }
+         // Get the existing domain path for this domain if it exists.
+         $properties['domain_id'] = $domain_id;
+-        $domain_paths = $this->entityTypeManager->getStorage('domain_path')
++        $domain_paths = \Drupal::entityTypeManager()->getStorage('domain_path')
+           ->loadByProperties($properties);
+         $domain_has_access = $domain_access_all || ($domain_access && !empty($domain_access[$domain_id]));
+         $domain_path = $domain_paths ? reset($domain_paths) : NULL;
+@@ -256,7 +256,7 @@ class DomainPathautoHelper {
+           'domain_id' => $domain_id,
+         ] + $properties;
+         if (!$domain_path) {
+-          $domain_path = $this->entityTypeManager->getStorage('domain_path')
++          $domain_path = \Drupal::entityTypeManager()->getStorage('domain_path')
+             ->create(['type' => 'domain_path']);
+           foreach ($properties_map as $field => $value) {
+             $domain_path->set($field, $value);
