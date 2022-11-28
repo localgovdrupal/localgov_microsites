@@ -2,6 +2,7 @@ name: LocalGov Drupal Microsites
 type: profile
 description: 'Install LocalGov Drupal Microsites.'
 core_version_requirement: ^9
+version: 2.x-dev
 
 install:
   # Core
