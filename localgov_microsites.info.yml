@@ -58,6 +58,7 @@ install:
   - localgov_microsites_group:localgov_microsites_directories
   - localgov_microsites_group:localgov_microsites_events
   - localgov_microsites_group:localgov_microsites_group
+  - localgov_microsites_group:localgov_microsites_group_webform
   - localgov_microsites_group:localgov_microsites_news
   - localgov_microsites_group:localgov_microsites_permissions
   - localgov_paragraphs:localgov_paragraphs_views
