@@ -1,0 +1,53 @@
+login_path: ''
+login_message: ''
+login_destination: ''
+requirements:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains: {  }
+  group_type:
+    id: group_type
+    group_types:
+      microsite: microsite
+    negate: 1
+    context_mapping:
+      group: '@domain_group.domain_group_context:group'
+  request_path:
+    id: request_path
+    negate: false
+    pages: ''
+  webform:
+    id: webform
+    negate: false
+    context_mapping: {  }
+    webforms: {  }
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    negate: false
+    context_mapping:
+      group: '@domain_group.domain_group_context:group'
+    bundles: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles: {  }
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles: {  }
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    negate: false
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'
+    bundles: {  }
+extra:
+  include_403: false
+  include_404: false
