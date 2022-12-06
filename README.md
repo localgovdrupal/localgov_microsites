@@ -215,9 +215,9 @@ lando phpunit --filter=myTestName
 * [Drupal 8 testing documentation](https://www.drupal.org/docs/8/testing)
 * [Workshop: Automated Testing and Test Driven Development in Drupal 8](https://github.com/opdavies/workshop-drupal-automated-testing)
 
-## Developer notes
+## Default content
 
-As developers, we often want to update this default content, using drush.
+As developers, we often want to update the default content, using drush.
 
 To export an item of content and all references:
 
