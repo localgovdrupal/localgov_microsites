@@ -21,7 +21,7 @@ We are actively supporting and developing the 2.x branch for Drupal 9.
 
 The 1.x branch is no longer actively supported and not recommended for new sites.
 
-If for any reason you are still using the 1.x branch on your site, please [create an issue on Github](https://github.com/localgovdrupal/localgov/issues) to let us know.
+If for any reason you are still using the 1.x branch on your site, please [create an issue on Github](https://github.com/localgovdrupal/localgov_microsites/issues) to let us know.
 
 ## Documentation
 
@@ -97,7 +97,7 @@ Once lando has finished building, use lando to run composer install and the site
 
 ```bash
 lando composer install
-lando drush si localgov -y
+lando drush si localgov_microsites -y
 ```
 
 Note: As you might be running a different version of PHP on your host machine from the 
@@ -129,7 +129,7 @@ seems to be a solid approach:
 rm -rf web/profiles/contrib/ web/modules/contrib/ web/themes/contrib/;
 composer clear-cache; composer update --with-dependencies --no-cache;
 lando start;
-lando drush si localgov -y;
+lando drush si localgov_microsites -y;
 
 ```
 
@@ -138,7 +138,7 @@ when running Composer commands, prefix the commands with `COMPOSER_MEMORY_LIMIT=
 For example, to install the project run:
 
 ```bash
-COMPOSER_MEMORY_LIMIT=-1 composer create-project localgovdrupal/localgov-project MY_PROJECT
+COMPOSER_MEMORY_LIMIT=-1 composer create-project localgovdrupal/localgov-microsites-project MY_PROJECT
 ```
 
 ## Contributing
