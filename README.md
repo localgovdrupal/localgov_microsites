@@ -63,6 +63,20 @@ This profile creates a single node of demo content using the https://www.drupal.
 
 This node includes layout paragraphs and paragraph content to demonstrate some of the content components available for a new microsite. When a new microsite is created, it attempts to clone this node into the new microsite. 
 
+As developers, we often want to update the default content, using drush.
+
+To export an item of content and all references:
+
+```bash
+lando drush dcer <entity type> <entity id> --folder=profiles/contrib/localgov_microsites/content/
+```
+
+So for node/1: 
+
+```bash
+lando drush dcer node 1 --folder=profiles/contrib/localgov_microsites/content/
+```
+
 ## Composer and Lando
 
 To install locally, you will need Composer and we recommend using Lando for a consistent developer environment.
@@ -214,19 +228,3 @@ lando phpunit --filter=myTestName
 * [Drupal 8 PHPUnit documentation](https://www.drupal.org/docs/8/testing/phpunit-in-drupal-8)
 * [Drupal 8 testing documentation](https://www.drupal.org/docs/8/testing)
 * [Workshop: Automated Testing and Test Driven Development in Drupal 8](https://github.com/opdavies/workshop-drupal-automated-testing)
-
-## Default content
-
-As developers, we often want to update the default content, using drush.
-
-To export an item of content and all references:
-
-```bash
-lando drush dcer <entity type> <entity id> --folder=profiles/contrib/localgov_microsites/content/
-```
-
-So for node/1: 
-
-```bash
-lando drush dcer node 1 --folder=profiles/contrib/localgov_microsites/content/
-```
