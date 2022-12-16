@@ -97,7 +97,7 @@ To install LocalGov Drupal locally for testing or development, use the
 Change `MY_PROJECT` to whatever you'd like your project directory to be called.
 
 ```bash
-composer create-project localgovdrupal/localgov-microsites-project MY_PROJECT --no-install 
+composer create-project localgovdrupal/localgov_microsites_project --stability beta --no-install MY_PROJECT
 ```
 
 Change directory into the MY_PROJECT directory and run lando start.
@@ -124,7 +124,7 @@ If developing locally and you want to force composer to clone again
 from source rather than use composer cache, you can add the `--no-cache` flag.
 
 ```bash
-lando composer create-project localgovdrupal/localgov-microsites-project MY_PROJECT --stability beta --no-cache  --no-install 
+lando composer create-project localgovdrupal/localgov_microsites_project --stability beta --stability beta --no-cache --no-install  MY_PROJECT
 ```
 
 If you just want to pull in the latest changes to LocalGov Drupal run composer
@@ -152,7 +152,7 @@ when running Composer commands, prefix the commands with `COMPOSER_MEMORY_LIMIT=
 For example, to install the project run:
 
 ```bash
-COMPOSER_MEMORY_LIMIT=-1 composer create-project localgovdrupal/localgov-microsites-project MY_PROJECT
+COMPOSER_MEMORY_LIMIT=-1 composer create-project localgovdrupal/localgov_microsites_project MY_PROJECT
 ```
 
 ## Contributing
