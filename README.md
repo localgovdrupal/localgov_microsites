@@ -228,3 +228,13 @@ lando phpunit --filter=myTestName
 * [Drupal 8 PHPUnit documentation](https://www.drupal.org/docs/8/testing/phpunit-in-drupal-8)
 * [Drupal 8 testing documentation](https://www.drupal.org/docs/8/testing)
 * [Workshop: Automated Testing and Test Driven Development in Drupal 8](https://github.com/opdavies/workshop-drupal-automated-testing)
+
+## Maintainers
+
+This project is currently maintained by: 
+
+ - Ekes: https://www.drupal.org/u/ekes
+ - Finn Lewis: https://www.drupal.org/u/finn-lewis
+ - Maria Young: https://www.drupal.org/u/mariay-0
+ - Mark Conroy: https://www.drupal.org/u/markconroy
+ - Stephen Cox: https://www.drupal.org/u/stephen-cox 
