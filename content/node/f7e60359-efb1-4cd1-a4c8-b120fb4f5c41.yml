@@ -43,6 +43,9 @@ default:
       alias: ''
       langcode: en
       pathauto: 0
+  localgov_hide_summary:
+    -
+      value: false
   localgov_page_banner:
     -
       entity:
@@ -65,6 +68,9 @@ default:
           localgov_image:
             -
               entity: aa8b4b9c-f74d-4e30-bf51-afbc005a2470
+  localgov_page_summary:
+    -
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed est erat. Mauris et auctor nunc. Donec vehicula eget tellus in dictum. Curabitur eu odio est. Nunc nec dapibus nibh. Morbi id augue quis justo sollicitudin facilisis. Nullam luctus eget augue sit amet hendrerit. '
   localgov_paragraph_content:
     -
       entity:
@@ -85,11 +91,17 @@ default:
             -
               value:
                 layout_paragraphs:
-                  region: ''
-                  parent_uuid: ''
                   layout: localgov_layout_onecol
                   config:
                     label: ''
+                  region: null
+                  parent_uuid: null
+          revision_translation_affected:
+            -
+              value: true
+          localgov_padding_bottom_section:
+            -
+              value: larger
           localgov_width_of_section:
             -
               value: contained-content
@@ -329,11 +341,20 @@ default:
             -
               value:
                 layout_paragraphs:
-                  region: ''
-                  parent_uuid: ''
                   layout: localgov_layout_onecol
                   config:
                     label: ''
+                  region: null
+                  parent_uuid: null
+          localgov_bg_colour_of_section:
+            -
+              value: colour-2
+          localgov_padding_bottom_section:
+            -
+              value: large
+          localgov_padding_top_section:
+            -
+              value: largest
           localgov_width_of_section:
             -
               value: full-width
@@ -404,14 +425,20 @@ default:
             -
               value:
                 layout_paragraphs:
-                  region: ''
-                  parent_uuid: ''
                   layout: localgov_layout_twocol
                   config:
                     label: ''
+                  region: null
+                  parent_uuid: null
+          revision_translation_affected:
+            -
+              value: true
+          localgov_padding_top_section:
+            -
+              value: largest
           localgov_width_of_section:
             -
-              value: full-width-contained-content
+              value: contained-content
     -
       entity:
         _meta:
@@ -523,11 +550,14 @@ default:
             -
               value:
                 layout_paragraphs:
-                  region: ''
-                  parent_uuid: ''
                   layout: localgov_layout_twocol
                   config:
                     label: ''
+                  region: null
+                  parent_uuid: null
+          localgov_padding_top_section:
+            -
+              value: large
           localgov_width_of_section:
             -
               value: contained-content
@@ -609,11 +639,13 @@ default:
             -
               value:
                 layout_paragraphs:
-                  region: ''
-                  parent_uuid: ''
-                  layout: localgov_layout_onecol
+                  move_items:
+                    content: first
+                  layout: localgov_layout_twocol
                   config:
                     label: ''
+                  region: null
+                  parent_uuid: null
           localgov_width_of_section:
             -
               value: contained-breakout
@@ -622,7 +654,7 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
-          uuid: 417d65e5-12f7-4880-b7f0-0fa474bde99e
+          uuid: 26fdc564-465e-4a36-b3d4-8c6464a5fff9
           bundle: localgov_featured_teasers
           default_langcode: en
         default:
@@ -636,7 +668,7 @@ default:
             -
               value:
                 layout_paragraphs:
-                  region: content
+                  region: first
                   parent_uuid: 9827053f-1c55-4333-bb3d-c5216b61867b
                   layout: ''
                   config: {  }
@@ -650,7 +682,7 @@ default:
                 _meta:
                   version: '1.0'
                   entity_type: paragraph
-                  uuid: 88d5be58-e39d-4a31-88a7-eb7d8664988d
+                  uuid: a40e7cf3-77af-474a-87be-86ef10638e31
                   bundle: localgov_featured_teaser
                   default_langcode: en
                 default:
@@ -689,7 +721,7 @@ default:
                 _meta:
                   version: '1.0'
                   entity_type: paragraph
-                  uuid: 27c4a1fa-5ac3-4e76-a4a1-49118ab22133
+                  uuid: 5dbcc758-541b-48b4-8f27-1e9db06a5204
                   bundle: localgov_featured_teaser
                   default_langcode: en
                 default:
@@ -728,7 +760,7 @@ default:
                 _meta:
                   version: '1.0'
                   entity_type: paragraph
-                  uuid: 63d45c9c-84b5-44ec-8a00-65efeb36e515
+                  uuid: 938f26ab-4dce-48cd-8a9c-307615c4e353
                   bundle: localgov_featured_teaser
                   default_langcode: en
                 default:
@@ -770,6 +802,151 @@ default:
         _meta:
           version: '1.0'
           entity_type: paragraph
+          uuid: 417d65e5-12f7-4880-b7f0-0fa474bde99e
+          bundle: localgov_featured_teasers
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1657281445
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: second
+                  parent_uuid: 9827053f-1c55-4333-bb3d-c5216b61867b
+                  layout: ''
+                  config: {  }
+                  parent_delta: 13
+          localgov_heading_level:
+            -
+              value: h2
+          localgov_paragraphs:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 88d5be58-e39d-4a31-88a7-eb7d8664988d
+                  bundle: localgov_featured_teaser
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1657281445
+                  behavior_settings:
+                    -
+                      value: {  }
+                  localgov_heading_level:
+                    -
+                      value: h3
+                  localgov_image:
+                    -
+                      entity: 83a2e6c9-5ec4-43e0-a861-1e323545350b
+                  localgov_link:
+                    -
+                      uri: 'internal:/'
+                      title: Link
+                      options: {  }
+                  localgov_text:
+                    -
+                      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at elit vestibulum, tincidunt tortor vitae, egestas est. Etiam condimentum facilisis dolor, sit amet aliquet velit varius vitae.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at elit vestibulum, tincidunt tortor vitae, egestas est. Etiam condimentum facilisis dolor, sit amet aliquet velit varius vitae.</p>\r\n"
+                      format: wysiwyg
+                  localgov_title:
+                    -
+                      value: 'Column 2: Teaser 1'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 27c4a1fa-5ac3-4e76-a4a1-49118ab22133
+                  bundle: localgov_featured_teaser
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1657281481
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  localgov_heading_level:
+                    -
+                      value: h3
+                  localgov_image:
+                    -
+                      entity: 5bd95426-2307-47b8-8701-7e10421d7d2d
+                  localgov_link:
+                    -
+                      uri: 'internal:/'
+                      title: link
+                      options: {  }
+                  localgov_text:
+                    -
+                      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at elit vestibulum, tincidunt tortor vitae, egestas est.&nbsp;</p>\r\n"
+                      format: wysiwyg
+                  localgov_title:
+                    -
+                      value: 'Column 2: Teaser number 2'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 63d45c9c-84b5-44ec-8a00-65efeb36e515
+                  bundle: localgov_featured_teaser
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1657281509
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  localgov_heading_level:
+                    -
+                      value: h3
+                  localgov_image:
+                    -
+                      entity: aa8b4b9c-f74d-4e30-bf51-afbc005a2470
+                  localgov_link:
+                    -
+                      uri: 'internal:/'
+                      title: link
+                      options: {  }
+                  localgov_text:
+                    -
+                      value: "<p>&nbsp;Aenean at elit vestibulum, tincidunt tortor vitae, egestas est.&nbsp;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>\r\n"
+                      format: wysiwyg
+                  localgov_title:
+                    -
+                      value: 'Column 2: A third teaser'
+          localgov_title:
+            -
+              value: 'Some more teasers'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
           uuid: 3eb4dbe9-f30c-481c-9a1c-db4717f59c6b
           bundle: localgov_page_section
           default_langcode: en
@@ -784,8 +961,8 @@ default:
             -
               value:
                 layout_paragraphs:
-                  region: ''
-                  parent_uuid: ''
+                  region: null
+                  parent_uuid: null
                   layout: localgov_layout_threecol_33_34_33
                   config:
                     label: ''
@@ -945,14 +1122,11 @@ default:
             -
               value:
                 layout_paragraphs:
-                  region: ''
-                  parent_uuid: ''
+                  region: null
+                  parent_uuid: null
                   layout: localgov_layout_threecol_33_34_33
                   config:
                     label: ''
-          revision_translation_affected:
-            -
-              value: true
           localgov_width_of_section:
             -
               value: contained-content
@@ -979,9 +1153,6 @@ default:
                   parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
           localgov_text:
             -
               value: "<p>Eros in cursus turpis massa tincidunt dui ut. Vel fringilla est ullamcorper eget nulla facilisi. Gravida arcu ac tortor dignissim convallis aenean et. Morbi leo urna molestie at elementum eu. Ut enim blandit volutpat maecenas volutpat. Ipsum consequat nisl vel pretium lectus.</p>\r\n\r\n<p class=\"callout callout-primary\">Pellentesque sit amet porttitor eget. Sit amet tellus cras adipiscing enim eu.</p>\r\n"
@@ -1009,9 +1180,6 @@ default:
                   parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
           localgov_caption:
             -
               value: "<p>Cliffs of Moher</p>\r\n"
@@ -1042,9 +1210,6 @@ default:
                   parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
           localgov_text:
             -
               value: "<p>Volutpat odio facilisis mauris sit amet. Amet venenatis urna cursus eget nunc. Diam quam nulla porttitor massa. Dignissim diam quis enim lobortis scelerisque fermentum dui. Lectus mauris ultrices eros in cursus. Posuere sollicitudin aliquam ultrices sagittis orci a. Risus commodo viverra maecenas accumsan lacus vel. In vitae turpis massa sed elementum tempus egestas sed sed.</p>\r\n"
@@ -1072,9 +1237,6 @@ default:
                   parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
           localgov_text:
             -
               value: "<p>A lacus vestibulum sed arcu non odio. Vel elit scelerisque mauris pellentesque pulvinar. Urna porttitor rhoncus dolor purus non. Elit ut aliquam purus sit amet. Penatibus et magnis dis parturient montes nascetur ridiculus. Tristique sollicitudin nibh sit amet commodo nulla facilisi. Diam maecenas ultricies mi eget. Neque egestas congue quisque egestas diam in. Vitae congue eu consequat ac felis donec et odio pellentesque.</p>\r\n\r\n<h3>Heading 3</h3>\r\n\r\n<p>Tortor condimentum lacinia quis vel eros donec ac. Bibendum enim facilisis gravida neque. Bibendum at varius vel pharetra vel. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Dolor sit amet consectetur adipiscing elit. In fermentum posuere urna nec tincidunt praesent. Facilisis volutpat est velit egestas dui id. Lacus sed viverra tellus in hac habitasse. Mauris ultrices eros in cursus turpis massa tincidunt dui ut.</p>\r\n\r\n<p>Nisi vitae suscipit tellus mauris. Posuere lorem ipsum dolor sit. Eu facilisis sed odio morbi quis commodo odio. Nunc sed blandit libero volutpat. Ut etiam sit amet nisl purus in. Fusce ut placerat orci nulla pellentesque dignissim.</p>\r\n"
@@ -1102,9 +1264,6 @@ default:
                   parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
           localgov_body_text:
             -
               value: "<p>Posuere urna nec tincidunt praesent semper feugiat. Ut aliquam purus sit amet luctus venenatis. Aenean et tortor at risus viverra adipiscing at. Scelerisque purus semper eget duis at tellus at urna condimentum.&nbsp;</p>\r\n"
@@ -1149,9 +1308,6 @@ default:
                   parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
           localgov_author:
             -
               value: 'Noam Chomsky'
@@ -1181,9 +1337,6 @@ default:
                   parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
           localgov_title:
             -
               value: 'Link button'
@@ -1213,9 +1366,6 @@ default:
                   parent_uuid: 4c25d84f-423e-46c0-bb48-b4e5d9b6d2e0
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
           localgov_background_image:
             -
               entity: 7599711d-341b-41ff-ae1e-89654f70cbd1
@@ -1259,14 +1409,11 @@ default:
             -
               value:
                 layout_paragraphs:
-                  region: ''
-                  parent_uuid: ''
+                  region: null
+                  parent_uuid: null
                   layout: localgov_layout_onecol
                   config:
                     label: ''
-          revision_translation_affected:
-            -
-              value: true
           localgov_width_of_section:
             -
               value: contained-content
@@ -1293,9 +1440,6 @@ default:
                   parent_uuid: 71047741-0031-4db4-8b04-7a80560ce90a
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
           localgov_table:
             -
               value:
@@ -1354,14 +1498,11 @@ default:
             -
               value:
                 layout_paragraphs:
-                  region: ''
-                  parent_uuid: ''
+                  region: null
+                  parent_uuid: null
                   layout: localgov_layout_onecol
                   config:
                     label: ''
-          revision_translation_affected:
-            -
-              value: true
           localgov_width_of_section:
             -
               value: contained-breakout
@@ -1388,12 +1529,6 @@ default:
                   parent_uuid: 2df69bb9-587d-4ed7-905b-68e17dd9862f
                   layout: ''
                   config: {  }
-          revision_translation_affected:
-            -
-              value: true
           localgov_video:
             -
               entity: 731ee019-1444-4170-870b-623a1cd3f691
-  localgov_page_summary:
-    -
-      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed est erat. Mauris et auctor nunc. Donec vehicula eget tellus in dictum. Curabitur eu odio est. Nunc nec dapibus nibh. Morbi id augue quis justo sollicitudin facilisis. Nullam luctus eget augue sit amet hendrerit. '
