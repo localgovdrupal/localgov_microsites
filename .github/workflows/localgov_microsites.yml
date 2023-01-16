@@ -6,10 +6,10 @@ name: Test LocalGov Microsites localgovdrupal/localgov_microsites drupal-profile
 on:
   push:
     branches:
-      - '2.*.x'
+      - '2.0.x'
   pull_request:
     branches:
-      - '2.*.x'
+      - '2.0.x'
 
 env:
   LOCALGOV_DRUPAL_PROJECT: localgovdrupal/localgov_microsites
@@ -25,7 +25,7 @@ jobs:
       fail-fast: false
       matrix:
         localgov-version:
-          - '2.*.x'
+          - '2.0.x'
         drupal-version:
           - '~9.4.0'
         php-version:
@@ -81,7 +81,7 @@ jobs:
 
       - name: Create LocalGov Microsites project
         run: |
-          composer create-project --stability dev --no-install localgovdrupal/localgov_microsites_project:${LATEST_RELEASE} ./html "${{ matrix.localgov-version }}"
+          composer create-project --stability dev --no-install localgovdrupal/localgov_microsites_project:2.0.x ./html "${{ matrix.localgov-version }}"
           composer --working-dir=./html require --no-install localgovdrupal/localgov_microsites:${{ matrix.localgov-version }}-dev
           composer --working-dir=./html require --no-install drupal/core-recommended:${{ matrix.drupal-version }} drupal/core-composer-scaffold:${{ matrix.drupal-version }} drupal/core-project-message:${{ matrix.drupal-version }} drupal/core-dev:${{ matrix.drupal-version }}
           composer --working-dir=./html install
