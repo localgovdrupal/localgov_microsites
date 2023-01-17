@@ -59,7 +59,7 @@ jobs:
       - name: Get the latest tagged release for branch version
         run: |
           LATEST_RELEASE=$(curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${GITHUB_REPOSITORY}/git/matching-refs/tags/${GIT_BASE%'.x'} | grep -Po '(?<=refs/tags/)[^"]+' | tail -1)
-          if [ -z $LATEST_RELEASE ]; then LATEST_RELEASE=2.x-dev; fi
+          if [ -z $LATEST_RELEASE ]; then LATEST_RELEASE=${{ matrix.localgov-version }}-dev; fi
           echo "LATEST_RELEASE=${LATEST_RELEASE}" >> $GITHUB_ENV
 
       - name: Cached workspace
