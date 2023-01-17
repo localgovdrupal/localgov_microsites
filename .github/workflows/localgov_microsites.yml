@@ -6,10 +6,10 @@ name: Test LocalGov Microsites localgovdrupal/localgov_microsites drupal-profile
 on:
   push:
     branches:
-      - '2.x'
+      - '2.1.x'
   pull_request:
     branches:
-      - '2.x'
+      - '2.1.x'
 
 env:
   LOCALGOV_DRUPAL_PROJECT: localgovdrupal/localgov_microsites
@@ -25,9 +25,9 @@ jobs:
       fail-fast: false
       matrix:
         localgov-version:
-          - '2.x'
+          - '2.1.x'
         drupal-version:
-          - '~9.3'
+          - '~9.5'
         php-version:
           - '8.1'
 
@@ -108,9 +108,9 @@ jobs:
       fail-fast: false
       matrix:
         localgov-version:
-          - '2.x'
+          - '2.1.x'
         drupal-version:
-          - '~9.3'
+          - '~9.5'
         php-version:
           - '8.1'
 
@@ -143,12 +143,12 @@ jobs:
       fail-fast: false
       matrix:
         localgov-version:
-          - '2.x'
+          - '2.1.x'
         drupal-version:
-          - '~9.3'
+          - '~9.5'
         php-version:
           - '8.1'
-
+          
     steps:
 
       - name: Cached workspace
@@ -177,9 +177,9 @@ jobs:
       fail-fast: false
       matrix:
         localgov-version:
-          - '2.x'
+          - '2.1.x'
         drupal-version:
-          - '~9.3'
+          - '~9.5'
         php-version:
           - '8.1'
 
