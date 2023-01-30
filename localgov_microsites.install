@@ -1,11 +1,9 @@
-
 <?php
 
 /**
  * @file
  * Install functions for the LocalGov Microsites installation profile.
  */
-
 
 /**
  * Enable stable9 theme if localgov_base theme is enabled.
