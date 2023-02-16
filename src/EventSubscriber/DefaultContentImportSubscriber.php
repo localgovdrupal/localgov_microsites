@@ -52,7 +52,7 @@ class DefaultContentImportSubscriber implements EventSubscriberInterface {
    */
   public static function getSubscribedEvents() {
     return [
-      'default_content.import'=> ['onContentImport'],
+      'default_content.import' => ['onContentImport'],
     ];
   }
 
