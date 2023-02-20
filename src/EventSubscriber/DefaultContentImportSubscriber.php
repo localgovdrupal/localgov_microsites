@@ -3,7 +3,6 @@
 namespace Drupal\localgov_microsites\EventSubscriber;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
-use Drupal\default_content\Event\DefaultContentEvents;
 use Drupal\default_content\Event\ImportEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
@@ -53,7 +52,7 @@ class DefaultContentImportSubscriber implements EventSubscriberInterface {
    */
   public static function getSubscribedEvents() {
     return [
-      DefaultContentEvents::IMPORT => ['onContentImport'],
+      'default_content.import' => ['onContentImport'],
     ];
   }
 
