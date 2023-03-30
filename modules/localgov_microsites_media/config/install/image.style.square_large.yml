@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.square
+  module:
+    - crop
+name: square_large
+label: 'Square Large'
+effects:
+  c7627da6-934e-47e2-a795-f10a424bda34:
+    uuid: c7627da6-934e-47e2-a795-f10a424bda34
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      anchor: center-center
+      width: 900
+      height: 900
+  157cfc95-3308-41b3-8297-8e0e671e39d0:
+    uuid: 157cfc95-3308-41b3-8297-8e0e671e39d0
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: square
