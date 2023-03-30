@@ -28,7 +28,7 @@ class MicrositesProfileTest extends BrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  protected $defaultTheme = 'stable';
+  protected $defaultTheme = 'stark';
 
   /**
    * Test localgov_microsites profile installs okay.
