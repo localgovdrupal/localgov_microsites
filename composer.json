@@ -17,7 +17,7 @@
         "drupal/core": "^9.5.1",
         "drupal/default_content": "^2.0@alpha",
         "drupal/domain_group": "dev-group-3.x#949a60ba",
-        "drupal/domain_path": "1.x-dev#33fde0b",
+        "drupal/domain_path": "^1.2",
         "drupal/gin": "^3.0@RC",
         "drupal/gin_login": "^2.0.0",
         "drupal/gin_toolbar": "^1.0@RC",
