@@ -14,6 +14,7 @@ on:
 env:
   LOCALGOV_DRUPAL_PROJECT: localgovdrupal/localgov_microsites
   LOCALGOV_DRUPAL_PROJECT_PATH: web/profiles/contrib/localgov_microsites
+  MICROSITES_VERSION: 2.1.x
 
 jobs:
 
@@ -82,7 +83,7 @@ jobs:
       - name: Create LocalGov Microsites project
         run: |
           composer create-project --stability dev --no-install localgovdrupal/localgov_microsites_project ./html "${{ matrix.localgov-version }}"
-          composer --working-dir=./html require --no-install localgovdrupal/localgov_microsites:${{ matrix.localgov-version }}-dev
+          composer --working-dir=./html require --no-install localgovdrupal/localgov_microsites:${MICROSITES_VERSION}-dev
           composer --working-dir=./html require --no-install drupal/core-recommended:${{ matrix.drupal-version }} drupal/core-composer-scaffold:${{ matrix.drupal-version }} drupal/core-project-message:${{ matrix.drupal-version }} drupal/core-dev:${{ matrix.drupal-version }}
           composer --working-dir=./html install
 
