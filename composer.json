@@ -22,7 +22,7 @@
         "drupal/gin_login": "^2.0",
         "drupal/gin_toolbar": "^1.0@RC",
         "drupal/metatag": "^1.22",
-        "localgovdrupal/localgov_blogs": "dev-feature/1.x/15-drupal-10  as 1.0.0-beta1",
+        "localgovdrupal/localgov_blogs": "dev-feature/1.x/15-drupal-10 as 1.0.0-beta1",
         "localgovdrupal/localgov_core": "^2.12",
         "localgovdrupal/localgov_directories": "^3.0@alpha",
         "localgovdrupal/localgov_events": "^3.0@alpha",
