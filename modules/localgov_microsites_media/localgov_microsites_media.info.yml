@@ -2,7 +2,7 @@ name: LocalGov Microsites Media
 description: LocalGov Media configuration required for Microsites profile.
 package: LocalGov Drupal
 type: module
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^8.8 || ^9 || ^10
 
 dependencies:
   - drupal:editor
