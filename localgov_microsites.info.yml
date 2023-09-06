@@ -8,7 +8,6 @@ install:
   - drupal:breakpoint
   - drupal:block
   - drupal:block_content
-  - drupal:ckeditor
   - drupal:config
   - drupal:contextual
   - drupal:crop
@@ -27,7 +26,6 @@ install:
   - drupal:options
   - drupal:page_cache
   - drupal:path
-  - drupal:quickedit
   - drupal:taxonomy
   - drupal:toolbar
   - drupal:views
