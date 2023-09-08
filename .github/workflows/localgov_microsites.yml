@@ -6,15 +6,14 @@ name: Test LocalGov Microsites localgovdrupal/localgov_microsites drupal-profile
 on:
   push:
     branches:
-      - '2.1.x'
+      - '3.x'
   pull_request:
     branches:
-      - '2.1.x'
+      - '3.x'
 
 env:
   LOCALGOV_DRUPAL_PROJECT: localgovdrupal/localgov_microsites
   LOCALGOV_DRUPAL_PROJECT_PATH: web/profiles/contrib/localgov_microsites
-  MICROSITES_VERSION: 2.1.x
 
 jobs:
 
@@ -26,9 +25,9 @@ jobs:
       fail-fast: false
       matrix:
         localgov-version:
-          - '2.x'
+          - '3.x'
         drupal-version:
-          - '~9.5'
+          - '~10.0'
         php-version:
           - '8.1'
 
@@ -83,7 +82,7 @@ jobs:
       - name: Create LocalGov Microsites project
         run: |
           composer create-project --stability dev --no-install localgovdrupal/localgov_microsites_project ./html "${{ matrix.localgov-version }}"
-          composer --working-dir=./html require --no-install localgovdrupal/localgov_microsites:${MICROSITES_VERSION}-dev
+          composer --working-dir=./html require --no-install localgovdrupal/localgov_microsites:{{ matrix.localgov-version }}-dev
           composer --working-dir=./html require --no-install drupal/core-recommended:${{ matrix.drupal-version }} drupal/core-composer-scaffold:${{ matrix.drupal-version }} drupal/core-project-message:${{ matrix.drupal-version }} drupal/core-dev:${{ matrix.drupal-version }}
           composer --working-dir=./html install
 
@@ -109,9 +108,9 @@ jobs:
       fail-fast: false
       matrix:
         localgov-version:
-          - '2.x'
+          - '3.x'
         drupal-version:
-          - '~9.5'
+          - '~10.0'
         php-version:
           - '8.1'
 
@@ -144,9 +143,9 @@ jobs:
       fail-fast: false
       matrix:
         localgov-version:
-          - '2.x'
+          - '3.x'
         drupal-version:
-          - '~9.5'
+          - '~10.0'
         php-version:
           - '8.1'
           
@@ -178,9 +177,9 @@ jobs:
       fail-fast: false
       matrix:
         localgov-version:
-          - '2.x'
+          - '3.x'
         drupal-version:
-          - '~9.5'
+          - '~10.0'
         php-version:
           - '8.1'
 
