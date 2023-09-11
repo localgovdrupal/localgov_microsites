@@ -30,8 +30,8 @@
         "localgovdrupal/localgov_microsites_base": "dev-feature/2.x/203-drupal-10-support as 2.0.0-beta8",
         "localgovdrupal/localgov_microsites_colour_picker_fields": "^1.0.0-beta1",
         "localgovdrupal/localgov_news": "^2.3",
-        "localgovdrupal/localgov_page": "dev-feature/1.x/50-drupal-10 as 1.0.0-beta1",
-        "localgovdrupal/localgov_claro": "dev-feature/2.x/8-drupal-10 as 2.0.0",
+        "localgovdrupal/localgov_page": "^1.0.0-beta2",
+        "localgovdrupal/localgov_claro": "^2.1.0",
         "localgovdrupal/localgov_sa11y": "^1.0.0-beta1",
         "drupal/require_login": "^3.0"
     },
