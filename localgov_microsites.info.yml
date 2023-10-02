@@ -1,14 +1,13 @@
 name: LocalGov Drupal Microsites
 type: profile
 description: 'Install LocalGov Drupal Microsites.'
-core_version_requirement: ^9
+core_version_requirement: ^9 || ^10
 
 install:
   # Core
   - drupal:breakpoint
   - drupal:block
   - drupal:block_content
-  - drupal:ckeditor
   - drupal:config
   - drupal:contextual
   - drupal:crop
@@ -27,7 +26,6 @@ install:
   - drupal:options
   - drupal:page_cache
   - drupal:path
-  - drupal:quickedit
   - drupal:taxonomy
   - drupal:toolbar
   - drupal:views
