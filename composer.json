@@ -25,7 +25,7 @@
         "localgovdrupal/localgov_core": "^2.12",
         "localgovdrupal/localgov_directories": "^3.0@alpha",
         "localgovdrupal/localgov_events": "^3.0@alpha",
-        "localgovdrupal/localgov_microsites_group": "dev-feature/group_sites",
+        "localgovdrupal/localgov_microsites_group": "dev-feature/group_sites as 2.0.0-beta13",
         "localgovdrupal/localgov_microsites_base": "^2.0.0-beta8",
         "localgovdrupal/localgov_microsites_colour_picker_fields": "^1.0.0-beta1",
         "localgovdrupal/localgov_news": "^2.3",
