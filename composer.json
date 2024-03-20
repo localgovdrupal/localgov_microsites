@@ -49,6 +49,9 @@
             "drupal/domain_path": {
                 "https://github.com/localgovdrupal/localgov_microsites/pull/175#issuecomment-1172879196": "https://raw.githubusercontent.com/localgovdrupal/localgov_microsites/995261d0909065e3124fba3fc0dce3e823aefa1d/patches/domain_path.146-url-aliases.patch",
                 "https://github.com/localgovdrupal/localgov_microsites_group/issues/326": "https://raw.githubusercontent.com/localgovdrupal/localgov_microsites/4cbdbe6ae3c3e95e7d2ed15d918c66805ad8e7f1/patches/localgov_microsites_group_326.domain_path_pathauto.unserializable.patch"
+            },
+            "drupal/autosave_form": {
+                "PHP 8.2 deprecation issue with AutosaveFormBuilder": "https://www.drupal.org/files/issues/2023-04-20/autosave_form-dynamic-property-deprecation.patch"
             }
         }
     }
