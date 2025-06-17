@@ -11,7 +11,7 @@ on:
 
 jobs:
   tests:
-    uses: localgovdrupal/localgov_shared_workflows/.github/workflows/test-microsites.yml@1.x
+    uses: localgovdrupal/localgov_shared_workflows/.github/workflows/test-microsites.yml@feature/1.x/use-phpunit
     with:
       project: 'localgovdrupal/localgov_microsites'
       project_path: 'web/profiles/contrib/localgov_microsites'
