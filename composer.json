@@ -29,7 +29,7 @@
         "localgovdrupal/localgov_events": "^3.0",
         "localgovdrupal/localgov_live_preview": "^1.0.0-beta1",
         "localgovdrupal/localgov_microsites_group": "^4.0",
-        "localgovdrupal/localgov_microsites_base": "^2.0",
+        "localgovdrupal/localgov_microsites_base": "^2.0 || ^3.0",
         "localgovdrupal/localgov_microsites_colour_picker_fields": "^1.0.0-beta1",
         "localgovdrupal/localgov_news": "^2.3",
         "localgovdrupal/localgov_page": "^1.0.0-beta2",
