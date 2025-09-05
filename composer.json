@@ -34,6 +34,7 @@
         "localgovdrupal/localgov_news": "^2.3",
         "localgovdrupal/localgov_page": "^1.0.0-beta2",
         "localgovdrupal/localgov_claro": "^2.1.0",
+        "localgovdrupal/localgov_publications": "^1.0",
         "localgovdrupal/localgov_sa11y": "^1.0.0-beta1",
         "drupal/require_login": "^3.0"
     },
