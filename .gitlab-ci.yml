@@ -16,9 +16,11 @@ include:
 ################
 variables:
   SKIP_CSPELL: "1"
+  OPT_IN_TEST_CURRENT: 0
   OPT_IN_TEST_MAX_PHP: 0
   OPT_IN_TEST_PREVIOUS_MAJOR: 1
   OPT_IN_TEST_NEXT_MAJOR: 0
-  OPT_IN_TEST_CURRENT: 0
 
-
+composer:
+  variables:
+    DRUPAL_CORE: 10.5.7
