@@ -3,7 +3,10 @@
  ![Tests](https://github.com/localgovdrupal/localgov_microsites/actions/workflows/test.yml/badge.svg)
 
 
-# LocalGov Drupal Microsites
+# [Archived] LocalGov Drupal Microsites
+
+**This project is archived, please use the drupal.org version at https://www.drupal.org/project/localgov_microsites
+**
 
 Drupal distribution and install profile to help UK councils collaborate and
 share Drupal code for publishing website content across a number of 
